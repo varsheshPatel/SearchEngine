@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Search - Wikimedia Foundation Governance Wiki</title> 
+  <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b915199f-3148-460e-904e-40a65b53503e","wgCSPNonce":false,"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Search","wgNamespaceNumber":-1,"wgPageName":"Special:Search","wgTitle":"Search","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:Search","wgRelevantArticleId":0,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},
+"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgNoticeProject":"wikimedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgULSCurrentAutonym":"English","advancedSearch.mimeTypes":{"tiff":"image/tiff","png":"image/png","gif":"image/gif","jpg":"image/jpeg","webp":"image/webp","otf":"application/vnd.oasis.opendocument.formula-template","ai":"application/postscript","xcf":"image/x-xcf","pdf":"application/pdf","mid":"audio/midi","ogg":"application/ogg","svg":"image/svg+xml","djvu":"image/vnd.djvu","ppt":"application/vnd.ms-powerpoint","doc":"application/msword","xls":"application/vnd.ms-excel","zip":"application/zip","odf":"application/vnd.oasis.opendocument.formula","odp":"application/vnd.oasis.opendocument.presentation","ods":"application/vnd.oasis.opendocument.spreadsheet","odt":"application/vnd.oasis.opendocument.text","odg":
+"application/vnd.oasis.opendocument.graphics","ott":"application/vnd.oasis.opendocument.text-template","wmv":"","avi":"video/x-msvideo","mov":"video/quicktime","aif":"audio/x-aiff","psd":"image/x-photoshop","dia":"application/x-dia-diagram","woff":"application/font-woff","woff2":"application/font-woff2","flac":"audio/x-flac","wav":"audio/x-wav","webm":"video/webm","mp3":"audio/mpeg","mpg":"video/mpeg"},"advancedSearch.tooltips":{"advancedsearch-help-plain":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for these words in the title or text.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EMultiple words can be entered here.\u003C/li\u003E\n\u003Cli\u003EPunctuation marks and other non-alphanumeric characters (with exception of the colon and comma) will be ignored.\u003C/li\u003E\n\u003Cli\u003EThere may be results that do not contain one or more of your search terms.\u003C/li\u003E\n\u003Cli\u003EWord stemming is applied. Example: If \u003Ci\u003Ecar\u003C/i\u003E is entered, the search will also consider \u003Ci\u003Ecars\u003C/i\u003E. The word stemming is language specific.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Full_text_search\"\u003EFull text search\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003E\u003Ccode\u003Esesame street car\u003C/code\u003E\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-phrase":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for a specific sequence of characters. Punctuation marks are ignored.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E(only valid when using quotation marks, see example below)\n\u003Cul\u003E\u003Cli\u003ESeparate the search phrases by comma or space e.g. \u003Ccode\u003E\"good morning\"\u003C/code\u003E, \u003Ccode\u003E\"hello friend!\"\u003C/code\u003E.\u003C/li\u003E\n\u003Cli\u003EPunctuation marks and other non-alphanumeric characters (with exception of the colon and comma) will be ignored.\u003C/li\u003E\n\u003Cli\u003ESearch is not case-sensitive.\u003C/li\u003E\n\u003Cli\u003EWord stemming is not applied.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Words.2C_phrases.2C_and_modifiers\"\u003EWords, phrases, and modifiers\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords in quotation marks, for example \u003Ccode\u003E\"Begin at the beginning\"\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-or":"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003EAt least one of the search terms has to be included in the page.\u003C/dd\u003E\n\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Words.2C_phrases.2C_and_modifiers\"\u003EWords, phrases, and modifiers\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords with \u003Ccode\u003EOR\u003C/code\u003E in between them like \u003Ccode\u003ELaptop OR Notebook\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E","advancedsearch-help-not":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003EExcludes pages containing these words from the search.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EWord stemming is applied. Example: If \u003Ci\u003Ecar\u003C/i\u003E is entered, the search will also consider \u003Ci\u003Ecars\u003C/i\u003E. The word stemming is language specific.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Words.2C_phrases.2C_and_modifiers\"\u003EWords, phrases, and modifiers\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords with \u003Ccode\u003E-\u003C/code\u003E before them, for example \u003Ccode\u003E-elephant\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E",
+"advancedsearch-help-deepcategory":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for pages that are in these categories and subcategories.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EOnly the first 5 subcategory levels will be included in your search.\u003C/li\u003E\n\u003Cli\u003EThe number of categories is limited to 256.\u003C/li\u003E\n\u003Cli\u003EYou can look for pages in multiple categories.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Deepcategory\"\u003EDeepcategory\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003E\u003Ccode\u003Edeepcategory:\u003C/code\u003E followed by a category name like \u003Ccode\u003Edeepcategory:Help\u003C/code\u003E. Use double quotes if the name contains spaces: \u003Ccode\u003Edeepcategory:\"Hidden categories\"\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-hastemplate":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for pages that contain exactly these templates.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EYou can find transcluded templates (templates consisting of other templates).\u003C/li\u003E\n\u003Cli\u003EThe autosuggest function can only find templates which start the same way as your search e.g. a search for \u003Ccode\u003E\"com...\"\u003C/code\u003E will suggest \u003Ci\u003E\"commons\"\u003C/i\u003E but not \u003Ci\u003E\"nowcommons\"\u003C/i\u003E.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Hastemplate\"\u003EHastemplate\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords in quotation marks with \u003Ccode\u003Ehastemplate:\u003C/code\u003E before them like \u003Ccode\u003Ehastemplate:\"missing information\"\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-inlanguage":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cp\u003EWill only search in the language you choose.\n\u003C/p\u003E\n\u003Cdl\u003E\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EYou can only search for pages in one language.\u003C/li\u003E\n\u003Cli\u003EThis field will only be visible in wikis that have the translatewiki extension enabled.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Inlanguage\"\u003EInlanguage\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003E\u003Ccode\u003Einlanguage:\u003C/code\u003E followed by a language code like \u003Ccode\u003Einlanguage:es\u003C/code\u003E. You can exclude languages by adding a \u003Ccode\u003E-\u003C/code\u003E in front of the keyword e.g. \u003Ccode\u003E-inlanguage:en\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-intitle":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for pages with titles that contain this word\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EThe search includes redirects.\u003C/li\u003E\n\u003Cli\u003EWord stemming is applied. Example: If \u003Ci\u003Ecar\u003C/i\u003E is entered, the search will also consider \u003Ci\u003Ecars\u003C/i\u003E. The word stemming is language specific.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Intitle_and_incategory\"\u003EIntitle and incategory\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords with \u003Ccode\u003Eintitle:\u003C/code\u003E before them like \u003Ccode\u003Eintitle:queen\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-subpageof":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches for pages that are subpages of this page.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EYou can only search for subpages of one page at a time.\u003C/li\u003E\n\u003Cli\u003EDon’t forget to enable the namespaces you want to limit your search to in the namespace filter.\u003C/li\u003E\n\u003Cli\u003EDo not include the namespace in front of the page name like this: \u003Cdel\u003E\u003Ccode\u003EWikimedia:Redirect\u003C/code\u003E\u003C/del\u003E.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#subpageof\"\u003ESubpageof\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003E\u003Ccode\u003Esubpageof:\u003C/code\u003E followed by a page name like \u003Ccode\u003Esubpageof:Redirect\u003C/code\u003E. Use double quotes if the parent page contains spaces: \u003Ccode\u003Esubpageof:\"Requests for comment\"\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-filetype":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003ESearches only for files of the selected type.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EYou can only search for one file type.\u003C/li\u003E\n\u003Cli\u003EYou can only select the given file types from the drop-down menu.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp pages\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#filetype\"\u003EFiletype\u003C/a\u003E and \u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#filemime\"\u003Efilemime\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EWords with \u003Ccode\u003Efiletype:\u003C/code\u003E before them like \u003Ccode\u003Efiletype:ogg\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E"
+,"advancedsearch-help-filew":"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003EThese fields allow you to specify the width of the file.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EThis is only applicable to file types that have width and height, like videos and images.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#File_measures\"\u003EFilemeasures\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003ENumbers with \u003Ccode\u003Efilew\u003C/code\u003E before them like \u003Ccode\u003Efilew:\u0026gt;800\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E","advancedsearch-help-fileh":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003EThese fields allow you to specify the height of the file.\u003C/dd\u003E\n\u003Cdt\u003EBe aware of the following\u003C/dt\u003E\n\u003Cdd\u003E\n\u003Cul\u003E\u003Cli\u003EThis is only applicable to file types that have width and height, like videos and images.\u003C/li\u003E\u003C/ul\u003E\u003C/dd\u003E\u003C/dl\u003E\n\u003Cdl\u003E\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#File_measures\"\u003EFilemeasures\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003ENumbers with \u003Ccode\u003Efileh\u003C/code\u003E before them like \u003Ccode\u003Efileh:\u0026gt;600\u003C/code\u003E.\u003C/dd\u003E\u003C/dl\u003E","advancedsearch-help-sort":
+"\u003Cdl\u003E\u003Cdt\u003EDescription\u003C/dt\u003E\n\u003Cdd\u003EChange the sorting order of results. The standard is that most relevant pages are placed on top of the results.\u003C/dd\u003E\n\u003Cdt\u003EHelp page\u003C/dt\u003E\n\u003Cdd\u003E\u003Ca class=\"external text\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch#Explicit_sort_orders\"\u003EExplicit sort orders\u003C/a\u003E\u003C/dd\u003E\n\u003Cdt\u003ESyntax-equivalent in the normal search\u003C/dt\u003E\n\u003Cdd\u003EThis feature has no keyword that you can type in the search input field since the function is specified via a parameter in the URL.\u003C/dd\u003E\u003C/dl\u003E"},"advancedSearch.namespacePresets":{"defaultNamespaces":{"enabled":true,"provider":"defaultNamespaces","label":"advancedsearch-namespaces-preset-default"},"discussion":{"enabled":true,"provider":"discussion","label":"advancedsearch-namespaces-preset-discussion"},"generalHelp":{"enabled":true,"namespaces":["4","12"
+],"label":"advancedsearch-namespaces-preset-general-help"},"all":{"enabled":true,"provider":"all","label":"advancedsearch-namespaces-preset-all"}},"advancedSearch.deepcategoryEnabled":true,"advancedSearch.searchableNamespaces":{"0":"(Main)","1":"Talk","2":"User","3":"User_talk","4":"Wikimedia","5":"Wikimedia_talk","6":"File","7":"File_talk","8":"MediaWiki","9":"MediaWiki_talk","10":"Template","11":"Template_talk","12":"Help","13":"Help_talk","14":"Category","15":"Category_talk","100":"Resolution","101":"Resolution_talk","102":"Legal","103":"Legal_talk","104":"Minutes","105":"Minutes_talk","106":"Policy","107":"Policy_talk","112":"Archive","113":"Archive_talk","460":"Campaign","461":"Campaign_talk","710":"TimedText","711":"TimedText_talk","828":"Module","829":"Module_talk","1198":"Translations","1199":"Translations_talk","2300":"Gadget","2301":"Gadget_talk","2302":"Gadget_definition","2303":"Gadget_definition_talk"},"advancedSearch.languages":{"aa":"Qafár af","ab":"??????","abs":
+"bahasa ambon","ace":"Acèh","ady":"????????","ady-cyrl":"????????","aeb":"?????/Tûnsî","aeb-arab":"?????","aeb-latn":"Tûnsî","af":"Afrikaans","ak":"Akan","aln":"Gegë","als":"Alemannisch","alt":"????? ???","am":"????","ami":"Pangcah","an":"aragonés","ang":"Ænglisc","anp":"??????","ar":"???????","arc":"?????","arn":"mapudungun","arq":"????????","ary":"???????","arz":"????","as":"???????","ase":"American sign language","ast":"asturianu","atj":"Atikamekw","av":"????","avk":"Kotava","awa":"????","ay":"Aymar aru","az":"az?rbaycanca","azb":"??????","ba":"?????????","ban":"Basa Bali","ban-bali":"?????","bar":"Boarisch","bat-smg":"žemait?ška","bbc":"Batak Toba","bbc-latn":"Batak Toba","bcc":"?????? ?????","bci":"wawle","bcl":"Bikol Central","be":"??????????","be-tarask":"?????????? (???????????)","be-x-old":
+"?????????? (???????????)","bg":"?????????","bgn":"??? ????? ?????","bh":"???????","bho":"???????","bi":"Bislama","bjn":"Banjar","blk":"?????????????","bm":"bamanankan","bn":"?????","bo":"???????","bpy":"????????????? ???????","bqi":"???????","br":"brezhoneg","brh":"Bráhuí","bs":"bosanski","btm":"Batak Mandailing","bto":"Iriga Bicolano","bug":"?? ????","bxr":"??????","ca":"català","cbk-zam":"Chavacano de Zamboanga","cdo":"Mìng-d??ng-ng??","ce":"???????","ceb":"Cebuano","ch":"Chamoru","cho":"Choctaw","chr":"???","chy":"Tsetsêhestâhese","ckb":"?????","co":"corsu","cps":"Capiceño","cr":"N?hiyaw?win / ???????","crh":"q?r?mtatarca","crh-cyrl":"?????????????? (??????)","crh-latn":"q?r?mtatarca (Latin)","cs":"?eština","csb":"kaszëbsczi",
+"cu":"?????????? / ??????????","cv":"???????","cy":"Cymraeg","da":"dansk","dag":"dagbanli","de":"Deutsch","de-at":"Österreichisches Deutsch","de-ch":"Schweizer Hochdeutsch","de-formal":"Deutsch (Sie-Form)","din":"Thu??jä?","diq":"Zazaki","dsb":"dolnoserbski","dtp":"Dusun Bundu-liwan","dty":"??????","dv":"??????????","dz":"?????","ee":"e?egbe","egl":"Emiliàn","el":"????????","eml":"emiliàn e rumagnòl","en":"English","en-ca":"Canadian English","en-gb":"British English","eo":"Esperanto","es":"español","es-419":"español de América Latina","es-formal":"español (formal)","et":"eesti","eu":"euskara","ext":"estremeñu","fa":"?????","ff":"Fulfulde","fi":"suomi","fit":"meänkieli","fiu-vro":"võro","fj":"Na Vosa Vakaviti","fo":"føroyskt","fon":"f??ngbè","fr":"français","frc":"français cadien","frp":"arpetan","frr":"Nordfriisk","fur":"furlan","fy":"Frysk","ga":"Gaeilge","gaa":"Ga","gag":"Gagauz",
+"gan":"??","gan-hans":"??????","gan-hant":"??????","gcr":"kriyòl gwiyannen","gd":"Gàidhlig","gl":"galego","gld":"?????","glk":"?????","gn":"Avañe'?","gom":"?????? ?????? / Gõychi Konknni","gom-deva":"?????? ??????","gom-latn":"Gõychi Konknni","gor":"Bahasa Hulontalo","got":"??????","grc":"?????? ????????","gsw":"Alemannisch","gu":"???????","guc":"wayuunaiki","gur":"farefare","guw":"gungbe","gv":"Gaelg","ha":"Hausa","hak":"???/Hak-kâ-ngî","haw":"Hawai?i","he":"?????","hi":"??????","hif":"Fiji Hindi","hif-latn":"Fiji Hindi","hil":"Ilonggo","ho":"Hiri Motu","hr":"hrvatski","hrx":"Hunsrik","hsb":"hornjoserbsce","hsn":"??","ht":"Kreyòl ayisyen","hu":"magyar","hu-formal":"magyar (formal)","hy":"???????","hyw":"??????????????","hz":"Otsiherero","ia":"interlingua","id":"Bahasa Indonesia","ie":
+"Interlingue","ig":"Igbo","ii":"??","ik":"Iñupiak","ike-cans":"??????","ike-latn":"inuktitut","ilo":"Ilokano","inh":"????????","io":"Ido","is":"íslenska","it":"italiano","iu":"??????/inuktitut","ja":"???","jam":"Patois","jbo":"la .lojban.","jut":"jysk","jv":"Jawa","ka":"???????","kaa":"Qaraqalpaqsha","kab":"Taqbaylit","kbd":"????????","kbd-cyrl":"????????","kbp":"Kab?y?","kcg":"Tyap","kea":"kabuverdianu","kg":"Kongo","khw":"?????","ki":"G?k?y?","kiu":"K?rmancki","kj":"Kwanyama","kjp":"????????","kk":"???????","kk-arab":"??????? (?????)","kk-cn":"??????? (?????)","kk-cyrl":"??????? (?????)","kk-kz":"??????? (?????????)","kk-latn":"qazaq?a (lat?n)","kk-tr":"qazaq?a (Türkïya)","kl":"kalaallisut","km":"?????????","kn":"?????","ko":"???","ko-kp":"???","koi":"????? ????","kr":
+"Kanuri","krc":"????????-???????","kri":"Krio","krj":"Kinaray-a","krl":"karjal","ks":"????? / ?????","ks-arab":"?????","ks-deva":"?????","ksh":"Ripoarisch","ksw":"????","ku":"kurdî","ku-arab":"????? (??????)","ku-latn":"kurdî (latînî)","kum":"???????","kv":"????","kw":"kernowek","ky":"????????","la":"Latina","lad":"Ladino","lb":"Lëtzebuergesch","lbe":"?????","lez":"?????","lfn":"Lingua Franca Nova","lg":"Luganda","li":"Limburgs","lij":"Ligure","liv":"L?võ k??","lki":"????","lld":"Ladin","lmo":"lombard","ln":"lingála","lo":"???","loz":"Silozi","lrc":"???? ??????","lt":"lietuvi?","ltg":"latga?u","lus":"Mizo ?awng","luz":"???? ???????","lv":"latviešu","lzh":"??","lzz":"Lazuri","mad":"Madhurâ","mai":"??????","map-bms":"Basa Banyumasan","mdf":"???????","mg":"Malagasy","mh":"Ebon","mhr":"???? ?????","mi":"M?ori","min":
+"Minangkabau","mk":"??????????","ml":"??????","mn":"??????","mni":"???? ???","mnw":"???? ???","mo":"????????????","mr":"?????","mrh":"Mara","mrj":"????? ????","ms":"Bahasa Melayu","ms-arab":"???? ?????","mt":"Malti","mus":"Mvskoke","mwl":"Mirandés","my":"??????????","myv":"??????","mzn":"????????","na":"Dorerin Naoero","nah":"N?huatl","nan":"Bân-lâm-gú","nap":"Napulitano","nb":"norsk bokmål","nds":"Plattdüütsch","nds-nl":"Nedersaksies","ne":"??????","new":"????? ????","ng":"Oshiwambo","nia":"Li Niha","niu":"Niu?","nl":"Nederlands","nl-informal":"Nederlands (informeel)","nmz":"nawdm","nn":"norsk nynorsk","no":"norsk","nod":"????????","nov":"Novial","nqo":"???","nrm":"Nouormand","nso":"Sesotho sa Leboa","nv":"Diné bizaad","ny":"Chi-Chewa","nyn":"runyankore","nys":"Nyunga","oc":"occitan","ojb":
+"Ojibwemowin","olo":"livvinkarjala","om":"Oromoo","or":"?????","os":"????","pa":"??????","pag":"Pangasinan","pam":"Kapampangan","pap":"Papiamentu","pcd":"Picard","pdc":"Deitsch","pdt":"Plautdietsch","pfl":"Pälzisch","pi":"????","pih":"Norfuk / Pitkern","pl":"polski","pms":"Piemontèis","pnb":"??????","pnt":"????????","prg":"pr?siskan","ps":"????","pt":"português","pt-br":"português do Brasil","pwn":"pinayuanan","qu":"Runa Simi","qug":"Runa shimi","rgn":"Rumagnôl","rif":"Tarifit","rm":"rumantsch","rmc":"roma?i ?hib","rmy":"romani ?hib","rn":"ikirundi","ro":"român?","roa-rup":"armãneashti","roa-tara":"tarandíne","rsk":"?????","ru":"???????","rue":"??????????","rup":"armãneashti","ruq":"Vl?he?te","ruq-cyrl":"????????","ruq-latn":"Vl?he?te","rw":"Ikinyarwanda","sa":"?????????","sah":"???? ????","sat":"???????","sc":"sardu","scn":"sicilianu","sco":
+"Scots","sd":"????","sdc":"Sassaresu","sdh":"????? ?????","se":"davvisámegiella","se-fi":"davvisámegiella (Suoma bealde)","se-no":"davvisámegiella (Norgga bealde)","se-se":"davvisámegiella (Ruo?a bealde)","sei":"Cmique Itom","ses":"Koyraboro Senni","sg":"Sängö","sgs":"žemait?ška","sh":"srpskohrvatski / ??????????????","shi":"Tacl?it","shi-latn":"Tacl?it","shi-tfng":"???????","shn":"????????? ","shy":"tacawit","shy-latn":"tacawit","si":"?????","simple":"Simple English","sjd":"????? ????? ????","sje":"bidumsámegiella","sk":"sloven?ina","skr":"???????","skr-arab":"???????","sl":"slovenš?ina","sli":"Schläsch","sm":"Gagana Samoa","sma":"åarjelsaemien","smn":"anarâškielâ","sms":"nuõrttsää?m?iõll","sn":"chiShona","so":"Soomaaliga","sq":"shqip","sr":"?????? / srpski","sr-ec":"?????? (????????)","sr-el":"srpski (latinica)","srn":"Sranantongo","ss":
+"SiSwati","st":"Sesotho","stq":"Seeltersk","sty":"??????????","su":"Sunda","sv":"svenska","sw":"Kiswahili","szl":"?l?nski","szy":"Sakizaya","ta":"?????","tay":"Tayal","tcy":"????","te":"??????","tet":"tetun","tg":"??????","tg-cyrl":"??????","tg-latn":"tojik?","th":"???","ti":"????","tk":"Türkmençe","tl":"Tagalog","tly":"tol??i","tly-cyrl":"??????","tn":"Setswana","to":"lea faka-Tonga","tpi":"Tok Pisin","tr":"Türkçe","tru":"?uroyo","trv":"Seediq","ts":"Xitsonga","tt":"???????/tatarça","tt-cyrl":"???????","tt-latn":"tatarça","tum":"chiTumbuka","tw":"Twi","ty":"reo tahiti","tyv":"???? ???","tzm":"????????","udm":"??????","ug":"???????? / Uyghurche","ug-arab":"????????","ug-latn":"Uyghurche","uk":"??????????","ur":"????","uz":"o?zbekcha/???????","uz-cyrl":"???????","uz-latn":"o?zbekcha","ve":"Tshivenda","vec":"vèneto"
+,"vep":"vepsän kel’","vi":"Ti?ng Vi?t","vls":"West-Vlams","vmf":"Mainfränkisch","vmw":"emakhuwa","vo":"Volapük","vot":"Va??a","vro":"võro","wa":"walon","war":"Winaray","wls":"Faka?uvea","wo":"Wolof","wuu":"??","xal":"??????","xh":"isiXhosa","xmf":"?????????","xsy":"saisiyat","yi":"??????","yo":"Yorùbá","yrl":"Nh??gatú","yue":"??","za":"Vahcuengh","zea":"Zeêuws","zgh":"???????? ????????","zh":"??","zh-classical":"??","zh-cn":"????????","zh-hans":"??????","zh-hant":"??????","zh-hk":"??????","zh-min-nan":"Bân-lâm-gú","zh-mo":"??????","zh-my":"????????","zh-sg":"???????","zh-tw":"??????","zh-yue":"??","zu":"isiZulu"},"searchTerm":"","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"personal","wgULSisCompactLinksEnabled":true};RLSTATE={
+"skins.vector.user.styles":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.advancedSearch.searchtoken":"loading","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.advancedSearch.initialstyles":"ready","mediawiki.helplink":"ready","mediawiki.special":"ready","mediawiki.special.search.styles":"ready","mediawiki.ui":"ready","mediawiki.ui.button":"ready","mediawiki.ui.input":"ready","mediawiki.widgets.SearchInputWidget.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","mediawiki.ui.icon":"ready","ext.tmh.thumbnail.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["ext.advancedSearch.init","mediawiki.special.search","site","mediawiki.page.ready","skins.vector.js",
+"skins.vector.es6","ext.gadget.collapsibleTables","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.centralNotice.geoIP","ext.centralauth.centralautologin","ext.uls.compactlinks","ext.uls.interface"];</script> 
+  <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement( "ext.advancedSearch.searchtoken@1vhat", function ( $, jQuery, require, module ) {
+/*@nomin*/mw.user.tokens.set("searchnamespaceToken","+\\");
+
+} );mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script> 
+  <link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.advancedSearch.initialstyles%7Cext.tmh.thumbnail.styles%7Cext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.helplink%2Cspecial%2Cui%7Cmediawiki.special.search.styles%7Cmediawiki.ui.button%2Cicon%2Cinput%7Cmediawiki.widgets.SearchInputWidget.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles&amp;only=styles&amp;skin=vector-2022"> 
+  <script async src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script> 
+  <meta name="ResourceLoaderDynamicStyles" content=""> 
+  <link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022"> 
+  <meta name="generator" content="MediaWiki 1.39.0-wmf.5"> 
+  <meta name="referrer" content="origin"> 
+  <meta name="referrer" content="origin-when-crossorigin"> 
+  <meta name="referrer" content="origin-when-cross-origin"> 
+  <meta name="robots" content="noindex,nofollow"> 
+  <meta name="format-detection" content="telephone=no"> 
+  <meta property="og:title" content="Search - Wikimedia Foundation Governance Wiki"> 
+  <meta property="og:type" content="website"> 
+  <link rel="alternate" media="only screen and (max-width: 720px)" href="//foundation.m.wikimedia.org/wiki/Special:Search"> 
+  <link rel="shortcut icon" href="/static/favicon/wmf.ico"> 
+  <link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikimedia Foundation Governance Wiki (en)"> 
+  <link rel="EditURI" type="application/rsd+xml" href="//foundation.wikimedia.org/w/api.php?action=rsd"> 
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"> 
+  <link rel="canonical" href="https://foundation.wikimedia.org/wiki/Special:Search"> 
+  <link rel="dns-prefetch" href="//login.wikimedia.org"> 
+ </head> 
+ <body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Search page-Special_Search rootpage-Special_Search skin-vector-2022 action-view skin-vector-disable-max-width">
+  <div class="mw-page-container"> 
+   <span id="top-page"></span> 
+   <a class="mw-jump-link" href="#content">Jump to content</a> 
+   <div class="mw-page-container-inner "> 
+    <input type="checkbox" id="mw-sidebar-checkbox" class="mw-checkbox-hack-checkbox" checked> 
+    <header class="mw-header"> 
+     <label id="mw-sidebar-button" class="mw-checkbox-hack-button mw-ui-icon mw-ui-button mw-ui-quiet mw-ui-icon-element" for="mw-sidebar-checkbox" role="button" aria-controls="mw-panel" data-event-name="ui.sidebar" tabindex="0" title="Main menu"> <span>Toggle sidebar</span> </label> 
+     <a href="/wiki/Home" class="mw-logo"> <img class="mw-logo-icon" src="/static/images/mobile/copyright/wikimedia.svg" alt="" aria-hidden="true" height="50" width="50"> <span class="mw-logo-container"> <img class="mw-logo-wordmark" alt="Wikimedia Foundation Governance Wiki" src="/static/images/mobile/copyright/wikimedia-wordmark.svg" style="width: 8em; height: 1.75em;"> </span> </a> 
+     <div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box"> 
+      <div> 
+       <form action="/w/index.php" id="searchform" class="vector-search-box-form"> 
+        <div id="simpleSearch" class="vector-search-box-inner" data-search-loc="header-moved"> 
+         <input class="vector-search-box-input" type="search" name="search" placeholder="Search Wikimedia Foundation Governance Wiki" aria-label="Search Wikimedia Foundation Governance Wiki" autocapitalize="sentences" title="Search Wikimedia Foundation Governance Wiki [f]" accesskey="f" id="searchInput"> 
+         <input type="hidden" name="title" value="Special:Search"> 
+         <input id="mw-searchButton" class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search"> 
+         <input id="searchButton" class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go"> 
+        </div> 
+       </form> 
+      </div> 
+      <a href="/wiki/Special:Search" class="mw-ui-button mw-ui-quiet mw-ui-icon mw-ui-icon-element mw-ui-icon-wikimedia-search search-toggle"> <span>Search</span> </a> 
+     </div> 
+     <div class="vector-user-links"> 
+      <nav id="p-personal-more" class="mw-portlet mw-portlet-personal-more vector-menu vector-user-menu-more" aria-labelledby="p-personal-more-label" role="navigation"> 
+       <label id="p-personal-more-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">User links</span> </label> 
+       <div class="vector-menu-content"> 
+        <ul class="vector-menu-content-list">
+         <li id="ca-uls" class="user-links-collapsible-item mw-list-item active"><a href="#" class="uls-trigger mw-ui-button mw-ui-quiet"><span class="mw-ui-icon mw-ui-icon-wikimedia-language"></span> <span>English</span></a></li> 
+        </ul> 
+       </div> 
+      </nav> 
+      <nav id="p-personal" class="mw-portlet mw-portlet-personal emptyPortlet vector-user-menu vector-user-menu-logged-out vector-menu vector-menu-dropdown" aria-labelledby="p-personal-label" role="navigation" title="More options"> 
+       <input type="checkbox" id="p-personal-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-personal" class="vector-menu-checkbox" aria-labelledby="p-personal-label"> 
+       <label id="p-personal-label" aria-label="" class="vector-menu-heading mw-ui-button mw-ui-quiet mw-ui-icon mw-ui-icon-element mw-ui-icon-wikimedia-ellipsis" aria-hidden="true"> <span class="vector-menu-heading-label">Personal tools</span> </label> 
+       <div class="vector-menu-content"> 
+        <div class="vector-user-menu-create-account">
+         <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ASearch" class="user-links-collapsible-item vector-menu-content-item mw-ui-icon mw-ui-icon-before" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a>
+        </div> 
+        <div class="vector-user-menu-login">
+         <a href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ASearch" icon="logIn" class="vector-menu-content-item vector-menu-content-item-login mw-ui-icon mw-ui-icon-before mw-ui-icon-wikimedia-logIn" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a>
+        </div> 
+        <div class="vector-user-menu-anon-editor"> 
+         <p> Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a> </p> 
+        </div> 
+        <ul class="vector-menu-content-list"></ul> 
+       </div> 
+      </nav> 
+     </div> 
+    </header> 
+    <div class="mw-workspace-container"> 
+     <div id="mw-navigation"> 
+      <div id="mw-head"> 
+       <div class="mw-article-toolbar-container"> 
+        <div id="left-navigation"> 
+         <nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation"> 
+          <label id="p-namespaces-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Namespaces</span> </label> 
+          <div class="vector-menu-content"> 
+           <ul class="vector-menu-content-list">
+            <li id="ca-nstab-special" class="selected mw-list-item"><a href="/wiki/Special:Search" title="This is a special page, and it cannot be edited"><span>Special page</span></a></li>
+           </ul> 
+          </div> 
+         </nav> 
+         <nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"> 
+          <input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-menu-checkbox" aria-labelledby="p-variants-label"> 
+          <label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">English</span> </label> 
+          <div class="vector-menu-content"> 
+           <ul class="vector-menu-content-list"></ul> 
+          </div> 
+         </nav> 
+        </div> 
+        <div id="right-navigation"> 
+         <nav id="p-views" class="mw-portlet mw-portlet-views emptyPortlet vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation"> 
+          <label id="p-views-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Views</span> </label> 
+          <div class="vector-menu-content"> 
+           <ul class="vector-menu-content-list"></ul> 
+          </div> 
+         </nav> 
+         <nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation" title="More options"> 
+          <input type="checkbox" id="p-cactions-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-cactions" class="vector-menu-checkbox" aria-labelledby="p-cactions-label"> 
+          <label id="p-cactions-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">More</span> </label> 
+          <div class="vector-menu-content"> 
+           <ul class="vector-menu-content-list"></ul> 
+          </div> 
+         </nav> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="mw-panel" class="mw-sidebar"> 
+       <nav id="p-aboutwikimedia" class="mw-portlet mw-portlet-aboutwikimedia vector-menu vector-menu-portal portal" aria-labelledby="p-aboutwikimedia-label" role="navigation"> 
+        <label id="p-aboutwikimedia-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">About Wikimedia</span> </label> 
+        <div class="vector-menu-content"> 
+         <ul class="vector-menu-content-list">
+          <li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Home" icon="home" title="Visit the main page [z]" accesskey="z"><span>Home</span></a></li>
+          <li id="n-corp-text" class="mw-list-item"><a href="//wikimediafoundation.org/" rel="nofollow"><span>Official website</span></a></li>
+          <li id="n-contactus" class="mw-list-item"><a href="//wikimediafoundation.org/about/contact/" rel="nofollow"><span>Contact us</span></a></li>
+          <li id="n-news-text" class="mw-list-item"><a href="//wikimediafoundation.org/news/" rel="nofollow"><span>Wikimedia News</span></a></li>
+          <li id="n-blog-text" class="mw-list-item"><a href="//diff.wikimedia.org/"><span>Movement blog</span></a></li>
+          <li id="n-answers" class="mw-list-item"><a href="//meta.wikimedia.org/wiki/Answers"><span>Questions for Wikimedia?</span></a></li>
+         </ul> 
+        </div> 
+       </nav> 
+       <nav id="p-support" class="mw-portlet mw-portlet-support vector-menu vector-menu-portal portal" aria-labelledby="p-support-label" role="navigation"> 
+        <label id="p-support-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Support</span> </label> 
+        <div class="vector-menu-content"> 
+         <ul class="vector-menu-content-list">
+          <li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_foundation.wikimedia.org" title="Support us"><span>Donate</span></a></li>
+          <li id="n-volunteering" class="mw-list-item"><a href="//wikimediafoundation.org/participate/" rel="nofollow"><span>Volunteering</span></a></li>
+          <li id="n-shop-text" class="mw-list-item"><a href="https://store.wikimedia.org"><span>Wikipedia Store</span></a></li>
+         </ul> 
+        </div> 
+       </nav> 
+       <nav id="p-corporate" class="mw-portlet mw-portlet-corporate vector-menu vector-menu-portal portal" aria-labelledby="p-corporate-label" role="navigation"> 
+        <label id="p-corporate-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Corporate</span> </label> 
+        <div class="vector-menu-content"> 
+         <ul class="vector-menu-content-list">
+          <li id="n-bylaws" class="mw-list-item"><a href="/wiki/Bylaws"><span>Bylaws</span></a></li>
+          <li id="n-values" class="mw-list-item"><a href="//wikimediafoundation.org/about/values/" rel="nofollow"><span>Values</span></a></li>
+          <li id="n-policies" class="mw-list-item"><a href="/wiki/Policies"><span>Policies</span></a></li>
+          <li id="n-resolutions" class="mw-list-item"><a href="/wiki/Resolutions"><span>Resolutions</span></a></li>
+          <li id="n-meetings-text" class="mw-list-item"><a href="/wiki/Meetings"><span>Board meetings</span></a></li>
+          <li id="n-annualreport" class="mw-list-item"><a href="//annual.wikimedia.org/"><span>Annual Report</span></a></li>
+          <li id="n-financialreports" class="mw-list-item"><a href="//wikimediafoundation.org/about/financial-reports/" rel="nofollow"><span>Financial reports and Form 990</span></a></li>
+          <li id="n-fundraisingreports" class="mw-list-item"><a href="https://meta.wikimedia.org/wiki/Fundraising/Reports"><span>Fundraising reports</span></a></li>
+          <li id="n-affiliates" class="mw-list-item"><a href="//meta.wikimedia.org/wiki/Wikimedia_movement_affiliates"><span>Movement affiliates</span></a></li>
+         </ul> 
+        </div> 
+       </nav> 
+       <nav id="p-sidebar-wiki" class="mw-portlet mw-portlet-sidebar-wiki vector-menu vector-menu-portal portal" aria-labelledby="p-sidebar-wiki-label" role="navigation"> 
+        <label id="p-sidebar-wiki-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Wiki</span> </label> 
+        <div class="vector-menu-content"> 
+         <ul class="vector-menu-content-list">
+          <li id="n-Give-feedback" class="mw-list-item"><a href="/wiki/Give_feedback"><span>Give feedback</span></a></li>
+          <li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li>
+         </ul> 
+        </div> 
+       </nav> 
+       <nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"> 
+        <label id="p-tb-label" aria-label="" class="vector-menu-heading" aria-hidden="true"> <span class="vector-menu-heading-label">Tools</span> </label> 
+        <div class="vector-menu-content"> 
+         <ul class="vector-menu-content-list">
+          <li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+          <li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+         </ul> 
+        </div> 
+       </nav> 
+      </div> 
+     </div> 
+     <div class="mw-table-of-contents-container mw-sticky-header-element"> 
+     </div> 
+     <div class="mw-content-container"> 
+      <main id="content" class="mw-body" role="main"> 
+       <a id="top"></a> 
+       <div id="siteNotice">
+        <!-- CentralNotice -->
+       </div> 
+       <div class="mw-indicators"> 
+        <div id="mw-indicator-mw-helplink" class="mw-indicator">
+         <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:CirrusSearch" target="_blank" class="mw-helplink">Help</a>
+        </div> 
+       </div> 
+       <h1 id="firstHeading" class="firstHeading mw-first-heading">Search</h1> 
+       <div id="bodyContent" class="vector-body"> 
+        <div id="contentSub"></div> 
+        <div id="contentSub2"></div> 
+        <div id="mw-content-text" class="mw-body-content">
+         <div class="mw-search-spinner">
+          <div class="mw-search-spinner-bounce"></div>
+         </div>
+         <div class="mw-search-form-wrapper">
+          <form id="search" method="get" action="/w/index.php">
+           <div id="mw-search-top-table">
+            <div class="oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-top oo-ui-actionFieldLayout">
+             <div class="oo-ui-fieldLayout-body">
+              <span class="oo-ui-fieldLayout-header"><label for="ooui-php-1" class="oo-ui-labelElement-label"></label></span>
+              <div class="oo-ui-fieldLayout-field">
+               <div class="oo-ui-actionFieldLayout-input">
+                <div id="searchText" class="oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-iconElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php mw-widget-titleInputWidget mw-widget-searchInputWidget" data-ooui="{&quot;_&quot;:&quot;mw.widgets.SearchInputWidget&quot;,&quot;performSearchOnClick&quot;:true,&quot;dataLocation&quot;:&quot;content&quot;,&quot;$overlay&quot;:true,&quot;highlightFirst&quot;:false,&quot;validateTitle&quot;:false,&quot;autofocus&quot;:true,&quot;name&quot;:&quot;search&quot;,&quot;inputId&quot;:&quot;ooui-php-1&quot;,&quot;title&quot;:&quot;Search Wikimedia Foundation Governance Wiki&quot;,&quot;icon&quot;:&quot;search&quot;,&quot;required&quot;:false}">
+                 <input type="search" tabindex="0" title="Search Wikimedia Foundation Governance Wiki" name="search" value="" autofocus id="ooui-php-1" class="oo-ui-inputWidget-input">
+                 <span class="oo-ui-iconElement-icon oo-ui-icon-search"></span>
+                 <span class="oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator"></span>
+                </div>
+               </div>
+               <span class="oo-ui-actionFieldLayout-button"><span class="oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-flaggedElement-progressive oo-ui-flaggedElement-primary oo-ui-buttonInputWidget"><button type="submit" tabindex="0" value="" class="oo-ui-inputWidget-input oo-ui-buttonElement-button"><span class="oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert"></span><span class="oo-ui-labelElement-label">Search</span><span class="oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert"></span></button></span></span>
+              </div>
+             </div>
+            </div>
+            <input type="hidden" value="Special:Search" name="title">
+            <input type="hidden" value="default" name="profile">
+            <input type="hidden" value="1" name="fulltext">
+           </div>
+           <div class="mw-search-visualclear"></div>
+           <div class="mw-search-profile-tabs">
+            <div class="search-types">
+             <ul>
+              <li class="current"><a href="/w/index.php?title=Special:Search&amp;profile=default&amp;search=&amp;fulltext=1" title="Search in Resolution, Legal, Minutes, Policy, (Main)">Content pages</a></li>
+              <li class="normal"><a href="/w/index.php?title=Special:Search&amp;profile=images&amp;search=&amp;fulltext=1" title="Search for files">Multimedia</a></li>
+              <li class="normal"><a href="/w/index.php?title=Special:Search&amp;profile=translation&amp;search=&amp;fulltext=1" title="Search from all translations">Translations</a></li>
+              <li class="normal"><a href="/w/index.php?title=Special:Search&amp;profile=all&amp;search=&amp;fulltext=1" title="Search all of content (including talk pages)">Everything</a></li>
+              <li class="normal"><a href="/w/index.php?title=Special:Search&amp;profile=advanced&amp;search=&amp;fulltext=1" title="Search in custom namespaces">Advanced</a></li>
+             </ul>
+            </div>
+            <div style="clear:both"></div>
+           </div>
+          </form>
+         </div>
+         <noscript>
+          <img src="//foundation.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;">
+         </noscript> 
+         <div class="printfooter">
+          Retrieved from "
+          <a dir="ltr" href="https://foundation.wikimedia.org/wiki/Special:Search">https://foundation.wikimedia.org/wiki/Special:Search</a>"
+         </div>
