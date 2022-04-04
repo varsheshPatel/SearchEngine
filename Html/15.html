@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" id="facebook" class="no_js">
+ <head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="default" id="meta_referrer">
+  <script nonce="jCT3HX7W">window._cstart=+new Date();</script>
+  <script nonce="jCT3HX7W">function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"AXibs7hfQE5NVwR0uTM","timeslice_heartbeat_config":{"pollIntervalMs":33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnimationFrame":true,"Event listenHandler mousemove":true,"Event listenHandler mouseover":true,"Event listenHandler mouseout":true,"Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isArtilleryOn":false},"shouldLogCounters":true,"timeslice_categories":{"react_render":true,"reflow":true},"sample_continuation_stacktraces":true,"gk_instrument_object_url":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ5W84LxBD_CdFvZ6Q0","isCQuick":false});</script>
+  <style nonce="jCT3HX7W"></style>
+  <script nonce="jCT3HX7W">__DEV__=0;CavalryLogger=window.CavalryLogger||function(a){this.lid=a,this.transition=!1,this.metric_collected=!1,this.is_detailed_profiler=!1,this.instrumentation_started=!1,this.pagelet_metrics={},this.events={},this.ongoing_watch={},this.values={t_cstart:window._cstart},this.piggy_values={},this.bootloader_metrics={},this.resource_to_pagelet_mapping={},this.initializeInstrumentation&&this.initializeInstrumentation()},CavalryLogger.prototype.setIsDetailedProfiler=function(a){this.is_detailed_profiler=a;return this},CavalryLogger.prototype.setTTIEvent=function(a){this.tti_event=a;return this},CavalryLogger.prototype.setValue=function(a,b,c,d){d=d?this.piggy_values:this.values;(typeof d[a]==="undefined"||c)&&(d[a]=b);return this},CavalryLogger.prototype.getLastTtiValue=function(){return this.lastTtiValue},CavalryLogger.prototype.setTimeStamp=CavalryLogger.prototype.setTimeStamp||function(a,b,c,d){this.mark(a);var e=this.values.t_cstart||this.values.t_start;e=d?e+d:CavalryLogger.now();this.setValue(a,e,b,c);this.tti_event&&a==this.tti_event&&(this.lastTtiValue=e,this.setTimeStamp("t_tti",b));return this},CavalryLogger.prototype.mark=typeof console==="object"&&console.timeStamp?function(a){console.timeStamp(a)}:function(){},CavalryLogger.prototype.addPiggyback=function(a,b){this.piggy_values[a]=b;return this},CavalryLogger.instances={},CavalryLogger.id=0,CavalryLogger.getInstance=function(a){typeof a==="undefined"&&(a=CavalryLogger.id);CavalryLogger.instances[a]||(CavalryLogger.instances[a]=new CavalryLogger(a));return CavalryLogger.instances[a]},CavalryLogger.setPageID=function(a){if(CavalryLogger.id===0){var b=CavalryLogger.getInstance();CavalryLogger.instances[a]=b;CavalryLogger.instances[a].lid=a;delete CavalryLogger.instances[0]}CavalryLogger.id=a},CavalryLogger.now=function(){return window.performance&&performance.timing&&performance.timing.navigationStart&&performance.now?performance.now()+performance.timing.navigationStart:new Date().getTime()},CavalryLogger.prototype.measureResources=function(){},CavalryLogger.prototype.profileEarlyResources=function(){},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){},CavalryLogger.start_js=function(){},CavalryLogger.start_js_script=function(){},CavalryLogger.done_js=function(){};CavalryLogger.getInstance().setTTIEvent("t_domcontent");CavalryLogger.prototype.measureResources=function(a,b){if(!this.log_resources)return;var c="bootload/"+a.name;if(this.bootloader_metrics[c]!==void 0||this.ongoing_watch[c]!==void 0)return;var d=CavalryLogger.now();this.ongoing_watch[c]=d;"start_"+c in this.bootloader_metrics||(this.bootloader_metrics["start_"+c]=d);b&&!("tag_"+c in this.bootloader_metrics)&&(this.bootloader_metrics["tag_"+c]=b);if(a.type==="js"){c="js_exec/"+a.name;this.ongoing_watch[c]=d}},CavalryLogger.prototype.stopWatch=function(a){if(this.ongoing_watch[a]){var b=CavalryLogger.now(),c=b-this.ongoing_watch[a];this.bootloader_metrics[a]=c;var d=this.piggy_values;a.indexOf("bootload")===0&&(d.t_resource_download||(d.t_resource_download=0),d.resources_downloaded||(d.resources_downloaded=0),d.t_resource_download+=c,d.resources_downloaded+=1,d["tag_"+a]=="_EF_"&&(d.t_pagelet_cssload_early_resources=b));delete this.ongoing_watch[a]}return this},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){var a={};Object.values(window.CavalryLogger.instances).forEach(function(b){b.bootloader_metrics&&Object.assign(a,b.bootloader_metrics)});return a},CavalryLogger.start_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("js_exec/"+a[b])},CavalryLogger.start_js_script=function(a){if(!a||!a.dataset)return;CavalryLogger.start_js([a.dataset.bootloaderHash||a.dataset.bootloaderHashClient])},CavalryLogger.done_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("bootload/"+a[b])},CavalryLogger.prototype.profileEarlyResources=function(a){for(var b=0;b<a.length;b++)this.measureResources({name:a[b][0],type:a[b][1]?"js":""},"_EF_")};CavalryLogger.getInstance().log_resources=true;CavalryLogger.getInstance().setIsDetailedProfiler(true);window.CavalryLogger&&CavalryLogger.getInstance().setTimeStamp("t_start");</script>
+  <noscript>
+   <meta http-equiv="refresh" content="0; URL=/features?_fb_noscript=1">
+  </noscript>
+  <title id="pageTitle">Messenger features</title>
+  <meta property="og:site_name" content="Facebook">
+  <meta property="og:url" content="https://www.messenger.com/features">
+  <meta property="og:title" content="Messenger">
+  <meta property="og:locale" content="en_US">
+  <link rel="alternate" hreflang="en" href="https://www.messenger.com/features">
+  <link rel="alternate" hreflang="en-GB" href="https://en-gb.messenger.com/features">
+  <link rel="alternate" hreflang="ca" href="https://ca-es.messenger.com/features">
+  <link rel="alternate" hreflang="cs" href="https://cs-cz.messenger.com/features">
+  <link rel="alternate" hreflang="cy" href="https://cy-gb.messenger.com/features">
+  <link rel="alternate" hreflang="da" href="https://da-dk.messenger.com/features">
+  <link rel="alternate" hreflang="de" href="https://de-de.messenger.com/features">
+  <link rel="alternate" hreflang="eu" href="https://eu-es.messenger.com/features">
+  <link rel="alternate" hreflang="es" href="https://es-es.messenger.com/features">
+  <link rel="alternate" hreflang="es-LA" href="https://es-la.messenger.com/features">
+  <link rel="alternate" hreflang="fi" href="https://fi-fi.messenger.com/features">
+  <link rel="alternate" hreflang="fr" href="https://fr-fr.messenger.com/features">
+  <link rel="alternate" hreflang="fr-CA" href="https://fr-ca.messenger.com/features">
+  <link rel="alternate" hreflang="hu" href="https://hu-hu.messenger.com/features">
+  <link rel="alternate" hreflang="it" href="https://it-it.messenger.com/features">
+  <link rel="alternate" hreflang="ja" href="https://ja-jp.messenger.com/features">
+  <link rel="alternate" hreflang="ko" href="https://ko-kr.messenger.com/features">
+  <link rel="alternate" hreflang="nb" href="https://nb-no.messenger.com/features">
+  <link rel="alternate" hreflang="nl" href="https://nl-nl.messenger.com/features">
+  <link rel="alternate" hreflang="pl" href="https://pl-pl.messenger.com/features">
+  <link rel="alternate" hreflang="pt" href="https://pt-br.messenger.com/features">
+  <link rel="alternate" hreflang="pt-PT" href="https://pt-pt.messenger.com/features">
+  <link rel="alternate" hreflang="ro" href="https://ro-ro.messenger.com/features">
+  <link rel="alternate" hreflang="ru" href="https://ru-ru.messenger.com/features">
+  <link rel="alternate" hreflang="sk" href="https://sk-sk.messenger.com/features">
+  <link rel="alternate" hreflang="sl" href="https://sl-si.messenger.com/features">
+  <link rel="alternate" hreflang="sv" href="https://sv-se.messenger.com/features">
+  <link rel="alternate" hreflang="th" href="https://th-th.messenger.com/features">
+  <link rel="alternate" hreflang="tr" href="https://tr-tr.messenger.com/features">
+  <link rel="alternate" hreflang="zh" href="https://zh-tw.messenger.com/features">
+  <link rel="alternate" hreflang="zh-CN" href="https://zh-cn.messenger.com/features">
+  <link rel="alternate" hreflang="zh-HK" href="https://zh-hk.messenger.com/features">
+  <link rel="alternate" hreflang="af" href="https://af-za.messenger.com/features">
+  <link rel="alternate" hreflang="bn" href="https://bn-in.messenger.com/features">
+  <link rel="alternate" hreflang="bg" href="https://bg-bg.messenger.com/features">
+  <link rel="alternate" hreflang="hr" href="https://hr-hr.messenger.com/features">
+  <link rel="alternate" hreflang="el" href="https://el-gr.messenger.com/features">
+  <link rel="alternate" hreflang="hi" href="https://hi-in.messenger.com/features">
+  <link rel="alternate" hreflang="id" href="https://id-id.messenger.com/features">
+  <link rel="alternate" hreflang="lt" href="https://lt-lt.messenger.com/features">
+  <link rel="alternate" hreflang="ms" href="https://ms-my.messenger.com/features">
+  <link rel="alternate" hreflang="pa" href="https://pa-in.messenger.com/features">
+  <link rel="alternate" hreflang="sr" href="https://sr-rs.messenger.com/features">
+  <link rel="alternate" hreflang="tl" href="https://tl-ph.messenger.com/features">
+  <link rel="alternate" hreflang="ta" href="https://ta-in.messenger.com/features">
+  <link rel="alternate" hreflang="te" href="https://te-in.messenger.com/features">
+  <link rel="alternate" hreflang="ml" href="https://ml-in.messenger.com/features">
+  <link rel="alternate" hreflang="vi" href="https://vi-vn.messenger.com/features">
+  <link rel="alternate" hreflang="ar" href="https://ar-ar.messenger.com/features">
+  <link rel="alternate" hreflang="he" href="https://he-il.messenger.com/features">
+  <meta name="description" content="Hang out anytime, anywhere—Messenger makes it easy and fun to stay close to your favorite people">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Messenger features">
+  <meta name="twitter:description" content="Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people.">
+  <meta name="twitter:image" content="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/yvbOx5two0W.png">
+  <meta name="twitter:image:alt" content="Facebook Messenger logo">
+  <meta property="og:site_name" content="Facebook">
+  <meta property="og:url" content="https://www.messenger.com/features">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Messenger features">
+  <meta property="og:description" content="Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people.">
+  <meta property="og:image" content="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/yvbOx5two0W.png">
+  <meta property="og:locale" content="en_US">
+  <link rel="alternate" hreflang="en" href="https://www.messenger.com/features">
+  <link rel="alternate" hreflang="en-GB" href="https://en-gb.messenger.com/features">
+  <link rel="alternate" hreflang="ca" href="https://ca-es.messenger.com/features">
+  <link rel="alternate" hreflang="cs" href="https://cs-cz.messenger.com/features">
+  <link rel="alternate" hreflang="cy" href="https://cy-gb.messenger.com/features">
+  <link rel="alternate" hreflang="da" href="https://da-dk.messenger.com/features">
+  <link rel="alternate" hreflang="de" href="https://de-de.messenger.com/features">
+  <link rel="alternate" hreflang="eu" href="https://eu-es.messenger.com/features">
+  <link rel="alternate" hreflang="es" href="https://es-es.messenger.com/features">
+  <link rel="alternate" hreflang="es-LA" href="https://es-la.messenger.com/features">
+  <link rel="alternate" hreflang="fi" href="https://fi-fi.messenger.com/features">
+  <link rel="alternate" hreflang="fr" href="https://fr-fr.messenger.com/features">
+  <link rel="alternate" hreflang="fr-CA" href="https://fr-ca.messenger.com/features">
+  <link rel="alternate" hreflang="hu" href="https://hu-hu.messenger.com/features">
+  <link rel="alternate" hreflang="it" href="https://it-it.messenger.com/features">
+  <link rel="alternate" hreflang="ja" href="https://ja-jp.messenger.com/features">
+  <link rel="alternate" hreflang="ko" href="https://ko-kr.messenger.com/features">
+  <link rel="alternate" hreflang="nb" href="https://nb-no.messenger.com/features">
+  <link rel="alternate" hreflang="nl" href="https://nl-nl.messenger.com/features">
+  <link rel="alternate" hreflang="pl" href="https://pl-pl.messenger.com/features">
+  <link rel="alternate" hreflang="pt" href="https://pt-br.messenger.com/features">
+  <link rel="alternate" hreflang="pt-PT" href="https://pt-pt.messenger.com/features">
+  <link rel="alternate" hreflang="ro" href="https://ro-ro.messenger.com/features">
+  <link rel="alternate" hreflang="ru" href="https://ru-ru.messenger.com/features">
+  <link rel="alternate" hreflang="sk" href="https://sk-sk.messenger.com/features">
+  <link rel="alternate" hreflang="sl" href="https://sl-si.messenger.com/features">
+  <link rel="alternate" hreflang="sv" href="https://sv-se.messenger.com/features">
+  <link rel="alternate" hreflang="th" href="https://th-th.messenger.com/features">
+  <link rel="alternate" hreflang="tr" href="https://tr-tr.messenger.com/features">
+  <link rel="alternate" hreflang="zh" href="https://zh-tw.messenger.com/features">
+  <link rel="alternate" hreflang="zh-CN" href="https://zh-cn.messenger.com/features">
+  <link rel="alternate" hreflang="zh-HK" href="https://zh-hk.messenger.com/features">
+  <link rel="alternate" hreflang="af" href="https://af-za.messenger.com/features">
+  <link rel="alternate" hreflang="bn" href="https://bn-in.messenger.com/features">
+  <link rel="alternate" hreflang="bg" href="https://bg-bg.messenger.com/features">
+  <link rel="alternate" hreflang="hr" href="https://hr-hr.messenger.com/features">
+  <link rel="alternate" hreflang="el" href="https://el-gr.messenger.com/features">
+  <link rel="alternate" hreflang="hi" href="https://hi-in.messenger.com/features">
+  <link rel="alternate" hreflang="id" href="https://id-id.messenger.com/features">
+  <link rel="alternate" hreflang="lt" href="https://lt-lt.messenger.com/features">
+  <link rel="alternate" hreflang="ms" href="https://ms-my.messenger.com/features">
+  <link rel="alternate" hreflang="pa" href="https://pa-in.messenger.com/features">
+  <link rel="alternate" hreflang="sr" href="https://sr-rs.messenger.com/features">
+  <link rel="alternate" hreflang="tl" href="https://tl-ph.messenger.com/features">
+  <link rel="alternate" hreflang="ta" href="https://ta-in.messenger.com/features">
+  <link rel="alternate" hreflang="te" href="https://te-in.messenger.com/features">
+  <link rel="alternate" hreflang="ml" href="https://ml-in.messenger.com/features">
+  <link rel="alternate" hreflang="vi" href="https://vi-vn.messenger.com/features">
+  <link rel="alternate" hreflang="ar" href="https://ar-ar.messenger.com/features">
+  <link rel="alternate" hreflang="he" href="https://he-il.messenger.com/features">
+  <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/ym/r/YQbyhl59TWY.ico">
+  <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yu/l/0,cross/-NdpAnHCtI5.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="DZigeVk"> 
+  <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y8/l/0,cross/C9g6WKJmDVW.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="cwmYdEq"> 
+  <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/OhYKshpWqAu.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="3Mmmyid"> 
+  <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,cross/IfnJJXcOG_M.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="d5UtP0b"> 
+  <script src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/6goXMynPode.js?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="ch5MFjK" nonce="jCT3HX7W"></script> 
+  <script nonce="jCT3HX7W">requireLazy(["HasteSupportData"],function(m){m.handle({"clpData":{"1838142":{"r":1,"s":1},"1949898":{"r":1},"1848815":{"r":10000,"s":1}},"gkxData":{"5241":{"result":true,"hash":"AT7o1bCQPGpf3ShEGbk"},"708253":{"result":false,"hash":"AT5n4hBL3YTMnQWtf7o"},"996940":{"result":false,"hash":"AT7opYuEGy3sjG1avqk"},"1073500":{"result":false,"hash":"AT7aJmfnqWyioxOOSbk"},"1224637":{"result":false,"hash":"AT7JRluWxuwDm3XzhiM"},"1263340":{"result":false,"hash":"AT5bwizWgDaFQudm200"},"1857581":{"result":false,"hash":"AT5yTxGMp6le0PAt5RI"},"676837":{"result":false,"hash":"AT4N8wBZA8ctCdHwzQI"},"676920":{"result":false,"hash":"AT497IX4gOFG8gZeWi8"},"1167394":{"result":false,"hash":"AT7BpN-tlUPwbIIFKeY"}}})});requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){(new ServerJS()).handle({"define":[["URLFragmentPreludeConfig",[],{"hashtagRedirect":false,"fragBlacklist":["nonce","access_token","oauth_token","xs","checkpoint_data","code"]},137],["CometPersistQueryParams",[],{"relative":{},"domain":{}},6231],["CookieDomain",[],{"domain":"messenger.com"},6421],["BootloaderConfig",[],{"deferBootloads":false,"jsRetries":[200,500],"jsRetryAbortNum":2,"jsRetryAbortTime":5,"silentDups":false,"hypStep4":false,"phdOn":false,"btCutoffIndex":566},329],["CSSLoaderConfig",[],{"timeout":5000,"modulePrefix":"BLCSS:"},619],["CookieCoreConfig",[],{"c_user":{},"cppo":{"t":86400},"dpr":{"t":604800},"i_user":{},"locale":{"t":604800},"m_pixel_ratio":{"t":604800},"noscript":{},"presence":{"t":2592000},"sfau":{},"wd":{"t":604800},"x-referer":{},"x-src":{"t":1}},2104],["CurrentCommunityInitialData",[],{},490],["CurrentEnvironment",[],{"facebookdotcom":false,"messengerdotcom":true,"workplacedotcom":false,"instagramdotcom":false},827],["CurrentUserInitialData",[],{"ACCOUNT_ID":"0","USER_ID":"0","NAME":"","SHORT_NAME":null,"IS_BUSINESS_PERSON_ACCOUNT":false,"HAS_SECONDARY_BUSINESS_PERSON":false,"IS_FACEBOOK_WORK_ACCOUNT":false,"IS_MESSENGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":false,"IS_MESSENGER_CALL_GUEST_USER":false,"IS_WORK_MESSENGER_CALL_GUEST_USER":false,"APP_ID":"772021112871879","IS_BUSINESS_DOMAIN":false},270],["DTSGInitialData",[],{},258],["ISB",[],{},330],["LSD",[],{"token":"AVrrBhkTb4E"},323],["ServerNonce",[],{"ServerNonce":"VwQu6Vm9Ml1pVrba7o1iqo"},141],["SiteData",[],{"server_revision":1005290037,"client_revision":1005290037,"tier":"","push_phase":"C3","pkg_cohort":"BP:messengerdotcom_pkg","haste_session":"19085.BP:messengerdotcom_pkg.2.0.0.0.","pr":1,"haste_site":"www","manifest_base_uri":"https:\/\/static.xx.fbcdn.net","manifest_origin":null,"be_one_ahead":false,"is_rtl":false,"is_comet":false,"is_experimental_tier":false,"is_jit_warmed_up":true,"hsi":"0-0","semr_host_bucket":"6","bl_hash_version":2,"skip_rd_bl":true,"comet_env":0,"wbloks_env":false,"spin":4,"__spin_r":1005290037,"__spin_b":"trunk","__spin_t":1649014493,"vip":"31.13.71.1"},317],["SprinkleConfig",[],{"param_name":"jazoest","version":2,"should_randomize":false},2111],["UserAgentData",[],{"browserArchitecture":"32","browserFullVersion":null,"browserMinorVersion":null,"browserName":"Unknown","browserVersion":null,"deviceName":"Unknown","engineName":"Unknown","engineVersion":null,"platformArchitecture":"32","platformName":"Unknown","platformVersion":null,"platformFullVersion":null},527],["PromiseUsePolyfillSetImmediateGK",[],{"www_always_use_polyfill_setimmediate":false},2190],["KSConfig",[],{"killed":{"__set":["MOBILIZER_SELF_SERVE_OWNERSHIP_RESOLVER","MLHUB_FLOW_AUTOREFRESH_SEARCH","NEKO_DISABLE_CREATE_FOR_SAP","EO_DISABLE_SYSTEM_SERIAL_NUMBER_FREE_TYPING_IN_CPE_NON_CLIENT","MOBILITY_KILL_OLD_VISIBILITY_POSITION_SETTING","WORKPLACE_DISPLAY_TEXT_EVIDENCE_REPORTING","BUSINESS_INVITE_FLOW_WITH_SELLER_PROFILE","BUY_AT_UI_LINE_DELETE","BUSINESS_GRAPH_SETTING_APP_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_BU_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_ESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_PRODUCT_CATALOG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_SESG_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_WABA_ASSIGNED_USERS_NEW_API","ADS_PLACEMENT_FIX_PUBLISHER_PLATFORMS_MUTATION","FORCE_FETCH_BOOSTED_COMPONENT_AFTER_ADS_CREATION","VIDEO_DIMENSIONS_FROM_PLAYER_IN_UPLOAD_DIALOG","SNIVY_GROUP_BY_EVENT_TRACE_ID_AND_NAME","ADS_STORE_VISITS_METRICS_DEPRECATION","DYNAMIC_ADS_SET_CATALOG_AND_PRODUCT_SET_TOGETHER","AD_DRAFT_ENABLE_SYNCRHONOUS_FRAGMENT_VALIDATION","NEKO_ENABLE_RESET_SAP_FOR_CREATE_AD_SET_CONTEXTUAL","SEPARATE_MESSAGING_COMACTIVITY_PAGE_PERMS","LAB_NET_NEW_UI_RELEASE","POCKET_MONSTERS_CREATE","POCKET_MONSTERS_DELETE","SRT_BANZAI_SRT_CORE_LOGGER","SRT_BANZAI_SRT_MAIN_LOGGER","WORKPLACE_PLATFORM_SECURE_APPS_MAILBOXES","POCKET_MONSTERS_UPDATE_NAME","IC_DISABLE_MERGE_TOOL_FEED_CHECK_FOR_REPLACE_SCHEDULE","ADS_EPD_IMPACTED_ADVERTISER_MIGRATE_XCONTROLLER","RECRUITING_CANDIDATE_PORTAL_ACCOUNT_DELETION_CARD"]},"ko":{"__set":["8H4bQmEiuLT","3OsLvnSHNTt","1G7wJ6bJt9K","9NpkGYwzrPG","3oh5Mw86USj","8NAceEy9JZo","7FOIzos6XJX","rf8JEPGgOi","4j36SVzvP3w","4NSq3ZC4ScE","53gCxKq281G","3yzzwBY7Npj","1onzIv0jH6H","8PlKuowafe8","1ntjZ2zgf03","4SIH2GRVX5W","2dhqRnqXGLQ","2WgiNOrHVuC","amKHb4Cw4WI","5mNEXob0nTj","8rDvN9vWdAK","9cL5o2kjfZo","5BdzWGmfvrA","DDZhogI19W","acrJTh9WGdp","1oOE64fL4wO","9Gd8qgRxn8z","MPMaqnqZ9c","5XCz1h9Iaw3","7r6mSP7ofr2","6DGPLrRdyts","aWxCyi1sEC7","9kCSDzzr8fu"]}},2580],["JSErrorLoggingConfig",[],{"appId":772021112871879,"extra":[],"reportInterval":50,"sampleWeight":1,"sampleWeightKey":"__jssesw","projectBlocklist":[]},2776],["DataStoreConfig",[],{"expandoKey":"__FB_STORE","useExpando":true},2915],["CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"sampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastStale":1.0e-8},3401],["ImmediateImplementationExperiments",[],{"prefer_message_channel":true},3419],["DTSGInitData",[],{"token":"","async_get_token":""},3515],["UriNeedRawQuerySVConfig",[],{"uris":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.com","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io","www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com","technopark.ru","officedepot.com.mx","bestbuy.com.mx","booking.com","nibio.no"]},3871],["InitialCookieConsent",[],{"deferCookies":false,"initialConsent":{"__set":[1,2]},"noCookies":false,"shouldShowCookieBanner":false},4328],["TrustedTypesConfig",[],{"useTrustedTypes":false,"reportOnly":false},4548],["WebConnectionClassServerGuess",[],{"connectionClass":"EXCELLENT"},4705],["CometAltpayJsSdkIframeAllowedDomains",[],{"allowed_domains":["https:\/\/live.adyen.com","https:\/\/integration-facebook.payu.in","https:\/\/facebook.payulatam.com","https:\/\/secure.payu.com","https:\/\/facebook.dlocal.com","https:\/\/buy2.boku.com"]},4920],["BootloaderEndpointConfig",[],{"debugNoBatching":false,"endpointURI":"https:\/\/www.messenger.com\/ajax\/bootloader-endpoint\/"},5094],["CookieConsentIFrameConfig",[],{"consent_param":"FQAREhIA.ARYCV77dLeEvq2e1ci252pYEaJyTmvk3zG66_OGNs3z34d9M","allowlisted_iframes":[]},5540],["BigPipeExperiments",[],{"link_images_to_pagelets":false,"enable_bigpipe_plugins":false},907],["IntlVariationHoldout",[],{"disable_variation":false},6533],["AsyncRequestConfig",[],{"retryOnNetworkError":"1","useFetchStreamAjaxPipeTransport":false},328],["FbtResultGK",[],{"shouldReturnFbtResult":true,"inlineMode":"NO_INLINE"},876],["IntlPhonologicalRules",[],{"meta":{"\/_B\/":"([.,!?\\s]|^)","\/_E\/":"([.,!?\\s]|$)"},"patterns":{"\/\u0001(.*)('|&#039;)s\u0001(?:'|&#039;)s(.*)\/":"\u0001$1$2s\u0001$3","\/_\u0001([^\u0001]*)\u0001\/":"javascript"}},1496],["IntlViewerContext",[],{"GENDER":3,"regionalLocale":null},772],["NumberFormatConfig",[],{"decimalSeparator":".","numberDelimiter":",","minDigitsForThousandsSeparator":4,"standardDecimalPatternInfo":{"primaryGroupSize":3,"secondaryGroupSize":3},"numberingSystemData":null},54],["SessionNameConfig",[],{"seed":"1NOA"},757],["ZeroCategoryHeader",[],{},1127],["ZeroRewriteRules",[],{"rewrite_rules":{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_browser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,"\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/privacy\/":1,"\/about\/privacy\/update\/":1,"\/privacy\/explanation\/":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,"\/zero\/toggle\/settings\/":1,"\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialog_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAppInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJSDialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action\/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_redirect\/":1,"\/zero_balance_redirect":1,"\/zero_balance_redirect\/l\/":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkpoint\/block\/":1,"\/exitdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,"\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/bookmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.php":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/":1,"\/hr\/zsh\/wc\/":1,"\/ajax\/bootloader-endpoint\/":1,"\/mobile\/zero\/carrier_page\/":1,"\/mobile\/zero\/carrier_page\/education_page\/":1,"\/mobile\/zero\/carrier_page\/feature_switch\/":1,"\/mobile\/zero\/carrier_page\/settings_page\/":1,"\/aloha_check_build":1,"\/upsell\/zbd\/softnudge\/":1,"\/mobile\/zero\/af_transition\/":1,"\/mobile\/zero\/af_transition\/action\/":1,"\/mobile\/zero\/freemium\/":1,"\/mobile\/zero\/freemium\/redirect\/":1,"\/mobile\/zero\/freemium\/zero_fup\/":1,"\/privacy\/policy\/":1,"\/privacy\/center\/":1,"\/data\/manifest\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/birthday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\/cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\/mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/upsell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h\/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchase\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"\/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthday_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wap\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/datapolicy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"\/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/terms\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/":1,"\/fbs\/pixel\/":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff\/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/confirmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/contactpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/upsell\/loyaltytopup\/accept\/":1,"\/settings\/":1,"\/lite\/":1,"\/zero_status_update\/":1,"\/operator_store\/":1,"\/upsell\/":1,"\/wifiauth\/login\/":1}},1478],["IntlNumberTypeConfig",[],{"impl":"if (n === 1) { return IntlVariations.NUMBER_ONE; } else { return IntlVariations.NUMBER_OTHER; }"},3405],["ServerTimeData",[],{"serverTime":1649014493781,"timeOfRequestStart":1649014493759.7,"timeOfResponseStart":1649014493759.7},5943],["FbtQTOverrides",[],{"overrides":{}},551],["AnalyticsCoreData",[],{"device_id":"$^|AcaVL4z4EaW1LVy0KpAFZWITOfUfl85gx7GzT0VypAxFp16Fu7SmCpbXLESKjqFX2D4OVN8BQNBsT-Rf-EXOpLynDH3Etao|fd.AcbosKEbJ3gtE9LbuiPl-5I9C7Go-LaSDvxEV5-X0F5iVM3SMYtQgqov_kOV8sXUDYYG4UCGyA4NFmUxS1HVlEh_","app_id":"772021112871879","enable_bladerunner":false,"enable_ack":true,"push_phase":"C3","enable_observer":false,"enable_dataloss_timer":false,"enable_fallback_for_br":true},5237],["cr:696703",[],{"__rc":[null,"Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:708886",["EventProfilerImpl"],{"__rc":["EventProfilerImpl","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:717822",["TimeSliceImpl"],{"__rc":["TimeSliceImpl","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:806696",["clearTimeoutBlue"],{"__rc":["clearTimeoutBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:896462",["setIntervalAcrossTransitionsBlue"],{"__rc":["setIntervalAcrossTransitionsBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:986633",["setTimeoutAcrossTransitionsBlue"],{"__rc":["setTimeoutAcrossTransitionsBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:1003267",["clearIntervalBlue"],{"__rc":["clearIntervalBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:1183579",["InlineFbtResultImpl"],{"__rc":["InlineFbtResultImpl","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:925100",["RunBlue"],{"__rc":["RunBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:729414",[],{"__rc":[null,"Aa0DzoDUpbb_fjVCNW_7VwamSPzSFscgy1Xt25qyrydOv2_Bokg7uLTYSCeyPNGzgUMbZ_pSviawZwg2zrWPk5qT"]},-1],["cr:1094907",[],{"__rc":[null,"Aa2uaOoOGmUQSiZjOHl5pII2wrYaZ-J6fM0BRvv58ConVkzPgpbnBKBG66UkDTlcClOJbW1gLlVdRbx5n_jXgM0"]},-1],["EventConfig",[],{"sampling":{"bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canplay":0,"selectionchange":0,"change":0,"timeupdate":0,"adaptation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abort":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":10000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keydown":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default":5000,"__min":100,"__interactionDefault":200,"__eventDefault":100000},"page_sampling_boost":1,"interaction_regexes":{},"interaction_boost":{},"event_types":{},"manual_instrumentation":false,"profile_eager_execution":false,"disable_heuristic":true,"disable_event_profiler":false},1726],["AdsInterfacesSessionConfig",[],{},2393]],"require":[["markJSEnabled\u00407453b0ba962c00c0206432876fc25c3f"],["lowerDomain\u0040a3e98a736c05e774156e06cc790a683b"],["URLFragmentPrelude\u0040b61fee2e4e00fcce9fe4f0f8d58bd8d1"],["Primer\u00408a4f1b2f5de44c048f37b01286f268a6"],["BigPipe\u004032a32e9462bcb6bcca020f40648dc38b"],["Bootloader\u00407f99e44fd99dc84882980eb9e8ba7e60"],["TimeSlice\u00400ce807e14eb3515c4837245516451c87"],["AsyncRequest\u0040cc9eec536cb5f1bf56b933e9d9e49475"],["BanzaiScuba_DEPRECATED\u0040cc9eec536cb5f1bf56b933e9d9e49475"],["VisualCompletionGating\u0040cc9eec536cb5f1bf56b933e9d9e49475"],["FbtLogging\u0040cc9eec536cb5f1bf56b933e9d9e49475"],["IntlQtEventFalcoEvent\u0040cc9eec536cb5f1bf56b933e9d9e49475"],["RequireDeferredReference\u0040a756c6ad8e473b3b781c6fabe47b67a3","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference\u0040a756c6ad8e473b3b781c6fabe47b67a3","unblock",[],[["AsyncRequest","BanzaiScuba_DEPRECATED","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent"],"css"]]]});});</script>
+ </head>
+ <body class="_605a x1 Locale_en_US" dir="ltr">
+  <script type="text/javascript" nonce="jCT3HX7W">requireLazy(["bootstrapWebSession"],function(j){j(1649014493)})</script>
+  <div class="_li">
+   <div class="_li">
+    <div class="_940p _9gip" role="main" aria-label="Main content">
+     <header class="_4n9r _8orh" role="banner" aria-label="Header" id="u_0_0_yC">
+      <div class="_1-l6" id="u_0_1_mJ"></div>
+      <div class="_1-l5">
+       <div class="_1-kf">
+        <div>
+         <a class="_3yl5 navlink" href="/">
+          <div>
+           <span class="_6a8a"><img class="_1-kh _93s6 img" src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/120009688_325579128711709_1736249742330805861_n.png?_nc_cat=1&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=uv92laT0k3IAX_uzuP_&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT-tMgiEt7Q42035JnVLiO9c-mVX91rIf0E0tNybWW7w3g&amp;oe=624E0FBD" alt="Messenger"></span>
+          </div></a>
+        </div>
+       </div>
+       <ul class="_2fux">
+        <li class="_4qfn _2fv3"><a href="https://www.messenger.com/features" class="_4vo5">Features</a></li>
+        <li class="_4qfn"><a href="https://www.messenger.com/desktop" class="_4vo5">Desktop App</a></li>
+        <li class="_4qfn"><a href="https://www.messenger.com/privacy" class="_4vo5">Privacy &amp; Safety</a></li>
+        <li class="_4qfn"><a href="https://developers.facebook.com/products/messenger/" class="_4vo5">For Developers</a></li>
+       </ul>
+       <div class="_8otc">
+        <button class="_8orf">
+         <svg class="_messengerMarketingSVG__root" viewbox="0 0 40 23" xmlns="http://www.w3.org/2000/svg">
+          <g fill-rule="evenodd">
+           <g transform="translate(-299 -40)">
+            <g transform="translate(299 40)">
+             <rect y="4" width="40" height="2"></rect>
+             <rect y="14" width="40" height="2"></rect>
+            </g>
+           </g>
+          </g>
+         </svg></button>
+        <button class="_8org">
+         <svg class="_messengerMarketingSVG__root" viewbox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+          <g fill-rule="evenodd" stroke-linecap="square">
+           <g class="_90nc" transform="translate(-306 -38)" fill-rule="nonzero" stroke-width="2">
+            <g transform="translate(307 39)">
+             <path transform="translate(11.743 11.626) rotate(-45) translate(-11.743 -11.626)" d="m-2.8154 11.774h29.428"></path>
+             <path transform="translate(11.314 11.314) rotate(45) translate(-11.314 -11.314)" d="m-3.2451 11.462h29.428"></path>
+            </g>
+           </g>
+          </g>
+         </svg></button>
+       </div>
+      </div>
+     </header>
+     <div class="_94ri _95sh _95sg _9h0r" id="messenger-features">
+      <div class="_8v9m _94r1" style="max-width:1195px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nm2 _8nmp _8nn4"></div>
+        <div class="_4wyl _4wyq _2k-y _4w-r _4wyu">
+         <div class="_4wyn _4wyo">
+          <div class="_6b6c">
+           <div class="_2kx3 _2ky6 _2kx4">
+            <div class="_2kzy" style="max-width:380px;">
+             <div class="_8nne _8nnm _8nnk _94rf">
+              <div class="_6hp- _6hq1">
+               <div class="_6b6w _9h0x">
+                <div>
+                 <h1 class="_6b6b" style="background-image:linear-gradient(83.78deg, #0088FF -6.9%, #A033FF 28.26%, #FF5C87 78.98%);">More ways <br>to stay connected</h1>
+                </div>
+               </div>
+              </div>
+              <div class="_6hp- _6hq0">
+               <div class="_6b6w _9h0x">
+                <div>
+                 <h1 class="_6b6b" style="background-image:linear-gradient(81.84deg, #0099FF -9.4%, #A033FF 51.57%, #FF5280 84.07%, #FF7061 90.59%);">More ways <br>to stay connected</h1>
+                </div>
+               </div>
+              </div>
+              <div class="_6hp- _6hp_">
+               <div class="_6b6w _9h0x">
+                <div>
+                 <h1 class="_6b6b" style="background-image:linear-gradient(83.78deg, #0088FF -6.9%, #A033FF 28.26%, #FF5C87 61.98%);">More ways <br>to stay connected</h1>
+                </div>
+               </div>
+              </div>
+              <div class="_messengerMarketingSpacer__root _8nlt _8nmf _8nn4"></div>
+              <div class="_94c3" style="transform:translate(0px,0px);width:%;margin-bottom:-35px;"></div>
+              <p class="_94-l">Messenger has everything you need to feel closer to your favorite people.</p>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hp_ _6hq0">
+              <div style="width: 150%; left: 50%; transform: translateX(-50%); position: relative;">
+               <img class="_6b6a img" alt="Features Image" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121089471_1231390253885655_7947605172695474571_n.png?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=-6TqxzsgN08AX_WanUb&amp;_nc_oc=AQnO-uc_JY9UGqFmzaywobtq7jTFJThbGN35NunYkw0seUaHCkmVrQjpi1mjQixkem0&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT8V2AOQwc1NCtbuoEl4fCedQruZlF-vGkp_XCRDkG0TDA&amp;oe=624F9206" width="">
+              </div>
+             </div>
+             <div class="_6hp- _6hq1">
+              <div class="_94c3" style="transform:translate(4px,50px);width:135%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Features Image" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121055223_2642836235971419_2337235704964743219_n.png?_nc_cat=108&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=tBGs8sBAV-IAX-Z97aD&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT-QCc7UYbK4TMSl20SZetxFwfxuUrJyDJ3n_YnjO-Fe4w&amp;oe=624FAFF3" width="1696">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="_messengerMarketingSpacer__root _8nly _8nmp _8nnd"></div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri">
+      <div class="_8v9m _94r1" style="max-width:680px;">
+       <div class="_8on8">
+        <div class="_4wyl _4wyq _2k-x _4w-r _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c">
+           <div class="_2kx3 _2ky6 _2kx5">
+            <div class="_2kzy" style="width:100;">
+             <div class="_2kx3 _2kyy _2kx4">
+              <div class="_2kzy">
+               <h3 class="_2ky_">CROSS-APP COMMUNICATION</h3>
+              </div>
+             </div>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnk _8nnl">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Hang with your favorite people on your favorite apps and devices</h2>
+              </div>
+              <div class="_messengerMarketingSpacer__root _8nlw _8nmi _8nn6"></div>
+              <div class="_2kx3 _2kyy _2kx4">
+               <div class="_2kzy" style="max-width:520px;">
+                <p class="_2kz2">Messenger powers conversations within Facebook, Instagram, Portal, and Oculus.</p>
+               </div>
+              </div>
+              <div class="_messengerMarketingSpacer__root _8nly"></div>
+              <div class="_6hp- _6hp_">
+               <img class="_6b6a img" alt="Any Time. Any platform." src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/120603667_4146141938735733_5013214651967330225_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=vD4r-eoIWzEAX-tCdM5&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT8bqiadbGYBbx2eLohwLUsJryCsIxEVziTq36WxbHOIOg&amp;oe=624F8B81" width="1164" style="width: 100%; max-width:100%">
+              </div>
+              <div class="_6hp- _6hq0 _6hq1">
+               <img class="_6b6a img" alt="Any Time. Any platform." src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/120603667_4146141938735733_5013214651967330225_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=vD4r-eoIWzEAX-tCdM5&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT8bqiadbGYBbx2eLohwLUsJryCsIxEVziTq36WxbHOIOg&amp;oe=624F8B81" width="1164" style="width: 100%; max-width:92%">
+              </div>
+              <div class="_messengerMarketingSpacer__root _8nlw _8nml _8nn9"></div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_3-yy" style="background-color: #fcfbff;"></div>
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:360px;">
+             <h3 class="_2ky_">WATCH TOGETHER</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Enjoy videos with your friends</h2>
+              </div>
+              <p class="_94-l">Watch movies, music videos, TV shows and more with your friends over video chat.</p>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hq0 _6hq1">
+              <div class="_94c3" style="transform:translate(0px,0px);width:95%;margin-bottom:-0px;">
+               <video class="_94c6" poster="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121808770_343448660263296_2349379849209219156_n.png?_nc_cat=111&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=u0RBBsVl5mYAX_i1j7T&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9OBZ-3oWH6c8aTByXMC3UL2K1d01bv_M7ro2cD2n4hjA&amp;oe=624E4AB6" autoplay="1" muted="1" loop="1" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121102663_1399766040228533_8301866763324278610_n.mp4?_nc_cat=107&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=WbluydbO35oAX-Otyes&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9uCWVhvAVlDyfpwjp3A_p9tOE1Z6DoMEGB9mErKnBO4g&amp;oe=624F9FAB" playsinline="1" data-preload="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121102663_1399766040228533_8301866763324278610_n.mp4?_nc_cat=107&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=WbluydbO35oAX-Otyes&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9uCWVhvAVlDyfpwjp3A_p9tOE1Z6DoMEGB9mErKnBO4g&amp;oe=624F9FAB" data-preload-type="video"></video>
+              </div>
+             </div>
+             <div class="_6hp- _6hp_">
+              <div style="width: 112%; left: 50%; transform: translateX(-50%); position: relative;">
+               <video class="_94c6" poster="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121808770_343448660263296_2349379849209219156_n.png?_nc_cat=111&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=u0RBBsVl5mYAX_i1j7T&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9OBZ-3oWH6c8aTByXMC3UL2K1d01bv_M7ro2cD2n4hjA&amp;oe=624E4AB6" autoplay="1" muted="1" loop="1" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121102663_1399766040228533_8301866763324278610_n.mp4?_nc_cat=107&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=WbluydbO35oAX-Otyes&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9uCWVhvAVlDyfpwjp3A_p9tOE1Z6DoMEGB9mErKnBO4g&amp;oe=624F9FAB" playsinline="1" data-preload="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121102663_1399766040228533_8301866763324278610_n.mp4?_nc_cat=107&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=WbluydbO35oAX-Otyes&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT9uCWVhvAVlDyfpwjp3A_p9tOE1Z6DoMEGB9mErKnBO4g&amp;oe=624F9FAB" data-preload-type="video"></video>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c _4wyr">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hq1">
+              <div class="_94c3" style="transform:translate(140px,20px);width:55%;margin-bottom:-0px;">
+               <video class="_94c6" poster="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/121669657_272362913953120_8810070943494933498_n.png?_nc_cat=100&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=GB7LAOv5IaEAX99BwNY&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT_3BR7fviixWyGZZkc-qLSVPQQ7hhmMK3DazWzBFTGNhg&amp;oe=624F35A5" autoplay="1" muted="1" loop="1" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121110808_1077808685970018_7380496783956148347_n.mp4?_nc_cat=105&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=U7FBpRJhD-oAX_lOMSd&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_SVRVQ6KgCM9V7uwYocRwtisXK1ZIviuR_JV9Fz_ukrA&amp;oe=624FD0E0" playsinline="1" data-preload="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121110808_1077808685970018_7380496783956148347_n.mp4?_nc_cat=105&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=U7FBpRJhD-oAX_lOMSd&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_SVRVQ6KgCM9V7uwYocRwtisXK1ZIviuR_JV9Fz_ukrA&amp;oe=624FD0E0" data-preload-type="video"></video>
+              </div>
+             </div>
+             <div class="_6hp- _6hp_ _6hq0">
+              <div class="_94c3 _9h76" style="transform:translate(0px,0px);width:67%;margin-bottom:-0px;">
+               <video class="_94c6" poster="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/121669657_272362913953120_8810070943494933498_n.png?_nc_cat=100&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=GB7LAOv5IaEAX99BwNY&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT_3BR7fviixWyGZZkc-qLSVPQQ7hhmMK3DazWzBFTGNhg&amp;oe=624F35A5" autoplay="1" muted="1" loop="1" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121110808_1077808685970018_7380496783956148347_n.mp4?_nc_cat=105&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=U7FBpRJhD-oAX_lOMSd&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_SVRVQ6KgCM9V7uwYocRwtisXK1ZIviuR_JV9Fz_ukrA&amp;oe=624FD0E0" playsinline="1" data-preload="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121110808_1077808685970018_7380496783956148347_n.mp4?_nc_cat=105&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=U7FBpRJhD-oAX_lOMSd&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_SVRVQ6KgCM9V7uwYocRwtisXK1ZIviuR_JV9Fz_ukrA&amp;oe=624FD0E0" data-preload-type="video"></video>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:460px;">
+             <h3 class="_2ky_">CUSTOM REACTIONS</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_6hp- _6hp_">
+               <div class="_9aoa _94o1">
+                <h2 class="_94nw _94nx">Say it with any emoji</h2>
+               </div>
+              </div>
+              <div class="_6hp- _6hq0 _6hq1">
+               <div class="_9aoa _94o1">
+                <h2 class="_94nw _94nx">Say it with <br>any emoji</h2>
+               </div>
+              </div>
+              <p class="_94-l">Lost for words? Now you can customize your reactions, with way more emojis to choose from, including <span style="color: black">?</span> and <span style="color: black">?</span>.</p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_3-yy" style="background-color: #FAFAFE;"></div>
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:360px;">
+             <h3 class="_2ky_">ANIMATED EFFECTS</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Express yourself</h2>
+              </div>
+              <p class="_94-l">Bring your conversations to life with fun AR effects, message effects and selfie stickers*.</p>
+             </div>
+             <div class="_6hp- _6hq1">
+              <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+              <div class="_messengerMarketingSpacer__root _8nm2 _8nmp _8nnd"></div>
+              <div class="_messengerMarketingSpacer__root _8nm2 _8nmp _8nnd"></div>
+              <div class="_messengerMarketingSpacer__root _8nlt _8nmf _8nn5"></div>
+              <div class="_94x2 _94xa">
+               <div class="_8nne _8nnm _8nnj _94rf">
+                <p class="_94-l">*Coming soon</p>
+                <div class="_messengerMarketingSpacer__root _8nlx _8nmj _8nn7"></div>
+               </div>
+              </div>
+             </div>
+             <div class="_6hp- _6hq0">
+              <div class="_messengerMarketingSpacer__root _8nl_ _8nmn _8nnb"></div>
+              <div class="_94x2 _94xa">
+               <div class="_8nne _8nnm _8nnj _94rf">
+                <p class="_94-l">*Coming soon</p>
+                <div class="_messengerMarketingSpacer__root _8nlx _8nmj _8nn7"></div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hq0 _6hq1">
+              <div class="_94c3" style="transform:translate(0px,30px);width:95%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Animated effects image" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121105421_658350888205644_4485524232082882255_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=u7BwwHBoixoAX8ilPPf&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_i9-qwngx5Vk7UgAaHpjjH6XF1OJx4tCXbQ2G37q5MAA&amp;oe=624F90A0" width="1270">
+              </div>
+             </div>
+             <div class="_6hp- _6hp_">
+              <div class="_94c3 _9h76" style="transform:translate(0px,0px);width:100%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Animated effects image" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121105421_658350888205644_4485524232082882255_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=u7BwwHBoixoAX8ilPPf&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT_i9-qwngx5Vk7UgAaHpjjH6XF1OJx4tCXbQ2G37q5MAA&amp;oe=624F90A0" width="1270">
+              </div>
+             </div>
+             <div class="_6hp- _6hp_">
+              <div class="_94x2 _94xa">
+               <div class="_8nne _8nnm _8nnj _94rf">
+                <p class="_94-l">*Coming soon</p>
+               </div>
+              </div>
+              <div class="_messengerMarketingSpacer__root _8nlv _8nmf _8nmq"></div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_8v9m _94r1" style="">
+      <div class="_8on8">
+       <div class="_messengerMarketingSpacer__root _8nlz _8nmi _8nn6"></div>
+       <noscript id="u_0_2_l0"></noscript>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_3-yy" style="background-color: #FAFAFE;"></div>
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:340px;">
+             <h3 class="_2ky_">REPLIES &amp; FORWARDING</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Let the conversation flow</h2>
+              </div>
+              <p class="_94-l">Choose the exact message you want to reply to or forward, right in your chat.</p>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hq0 _6hq1">
+              <div class="_94c3" style="transform:translate(-60px,20px);width:110%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Let the conversation flow" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121276964_694622284798211_2327909589864702037_n.png?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=kJmrjv-cSKkAX8RVckB&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT885A8szSUyIp8D9eYzGkkWP7U6UciK8cDTB5-ryg8xsw&amp;oe=624EE09D" width="">
+              </div>
+             </div>
+             <div class="_6hp- _6hp_">
+              <div class="_94c3" style="transform:translate(-30px,0px);width:110%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Let the conversation flow" src="https://scontent-ort2-1.xx.fbcdn.net/v/t39.2365-6/121276964_694622284798211_2327909589864702037_n.png?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=ad8a9d&amp;_nc_ohc=kJmrjv-cSKkAX8RVckB&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT885A8szSUyIp8D9eYzGkkWP7U6UciK8cDTB5-ryg8xsw&amp;oe=624EE09D" width="">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c _4wyr">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hq1">
+              <div class="_94c3" style="transform:translate(145px,15px);width:60%;margin-bottom:-0px;">
+               <video class="_94c6" poster="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121665170_340263387076490_5560809650091276518_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=I53TytlMTj8AX8Gj75q&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT-fjKTF2N8GBNEDOdCiwIx6S74-PddZZdE7ub52L7yy6g&amp;oe=624E9B6A" autoplay="1" muted="1" loop="1" src="https://video.fybz2-2.fna.fbcdn.net/v/t42.1790-2/122231556_217159159833938_1321161281269299179_n.mp4?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=985c63&amp;efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&amp;_nc_ohc=bRdXM6sQZF0AX_rDmNV&amp;rl=300&amp;vabr=78&amp;_nc_ht=video.fybz2-2.fna&amp;oh=00_AT8sgOfp3jtCZLDo2XC7hLUOqgJ0m_moSle-exW9pBYCbw&amp;oe=624A1924" playsinline="1" data-preload="https://video.fybz2-2.fna.fbcdn.net/v/t42.1790-2/122231556_217159159833938_1321161281269299179_n.mp4?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=985c63&amp;efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&amp;_nc_ohc=bRdXM6sQZF0AX_rDmNV&amp;rl=300&amp;vabr=78&amp;_nc_ht=video.fybz2-2.fna&amp;oh=00_AT8sgOfp3jtCZLDo2XC7hLUOqgJ0m_moSle-exW9pBYCbw&amp;oe=624A1924" data-preload-type="video"></video>
+              </div>
+             </div>
+             <div class="_6hp- _6hp_ _6hq0">
+              <div class="_94c3 _9h76" style="transform:translate(0px,0px);width:80%;margin-bottom:-0px;">
+               <video class="_94c6" poster="https://scontent-ort2-1.xx.fbcdn.net/v/t39.8562-6/121665170_340263387076490_5560809650091276518_n.png?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=I53TytlMTj8AX8Gj75q&amp;_nc_ht=scontent-ort2-1.xx&amp;oh=00_AT-fjKTF2N8GBNEDOdCiwIx6S74-PddZZdE7ub52L7yy6g&amp;oe=624E9B6A" autoplay="1" muted="1" loop="1" src="https://video.fybz2-2.fna.fbcdn.net/v/t42.1790-2/122231556_217159159833938_1321161281269299179_n.mp4?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=985c63&amp;efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&amp;_nc_ohc=bRdXM6sQZF0AX_rDmNV&amp;rl=300&amp;vabr=78&amp;_nc_ht=video.fybz2-2.fna&amp;oh=00_AT8sgOfp3jtCZLDo2XC7hLUOqgJ0m_moSle-exW9pBYCbw&amp;oe=624A1924" playsinline="1" data-preload="https://video.fybz2-2.fna.fbcdn.net/v/t42.1790-2/122231556_217159159833938_1321161281269299179_n.mp4?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=985c63&amp;efg=eyJybHIiOjMwMCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&amp;_nc_ohc=bRdXM6sQZF0AX_rDmNV&amp;rl=300&amp;vabr=78&amp;_nc_ht=video.fybz2-2.fna&amp;oh=00_AT8sgOfp3jtCZLDo2XC7hLUOqgJ0m_moSle-exW9pBYCbw&amp;oe=624A1924" data-preload-type="video"></video>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:400px;">
+             <h3 class="_2ky_">APP LOCK</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Keep your chats extra secure</h2>
+              </div>
+              <p class="_94-l">Opt in to use your device’s face or fingerprint ID to unlock Messenger, so only you have access to your chats.</p>
+             </div>
+             <div class="_94x2 _94xa">
+              <div class="_8nne _8nnm _8nnj _94rf">
+               <p class="_94-l">*Available on iOS only</p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95sh _95sg" id="rooms-share-a-link">
+      <div class="_3-yy" style="background-color: #FAFAFE;"></div>
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:465px;">
+             <div class="_messengerMarketingSpacer__root _8nlt _8nmo _8nnc"></div>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmj _8nn7"></div>
+             <h3 class="_2ky_">PAYMENTS</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Send money to friends &amp; family</h2>
+              </div>
+              <p class="_94-l">Send and receive money securely and easily by adding your debit card, PayPal account or reloadable prepaid card.*</p>
+             </div>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nml _8nn9"></div>
+             <div class="_messengerMarketingSpacer__root _8nlt _8nmk _8nn8"></div>
+             <div class="_6hp- _6hq1">
+              <div class="_94x2 _94xa">
+               <div class="_8nne _8nnm _8nnj _94rf">
+                <p class="_94-l">*Available in the US only. Single-source cards eligible for sending money only.</p>
+                <div class="_messengerMarketingSpacer__root _8nlt _8nmi _8nn6"></div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hp_">
+              <div class="_94c3" style="transform:translate(0px,0px);width:90%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Make Money Moves" src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/121281902_2755674331388383_8406463564000211762_n.png?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=4Q2OFMo1fn8AX8TwSL5&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT_t9bWobOHVNVuQrJiHbI5jtgDO1F17_eOPU4wDN3Pnrw&amp;oe=624F98B4" width="914">
+              </div>
+             </div>
+             <div class="_6hp- _6hq0 _6hq1">
+              <div class="_94c3" style="transform:translate(0px,30px);width:75%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Make Money Moves" src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/121281902_2755674331388383_8406463564000211762_n.png?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=4Q2OFMo1fn8AX8TwSL5&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT_t9bWobOHVNVuQrJiHbI5jtgDO1F17_eOPU4wDN3Pnrw&amp;oe=624F98B4" width="914">
+              </div>
+             </div>
+             <div class="_6hp- _6hp_ _6hq0">
+              <p class="_6k6m">*Available in the US only. Single-source cards eligible for sending money only.</p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="_94ri _95si _95sk" id="rooms-share-a-link">
+      <div class="_8v9m _94r1" style="max-width:1285px;">
+       <div class="_8on8">
+        <div class="_messengerMarketingSpacer__root _8nlw _8nmf _8nmq"></div>
+        <div class="_4wyl _4wyq _2k-y _2k-q _4wyu">
+         <div class="_4wyn">
+          <div class="_6b6c _4wyr">
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy">
+             <div class="_6hp- _6hp_">
+              <div class="_94c3" style="transform:translate(15px,0px);width:85%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Handle your business" src="https://scontent.fybz2-2.fna.fbcdn.net/v/t39.8562-6/120894751_1549467898574430_9196133852584655168_n.png?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=5aT3CJIA6JQAX9CON-K&amp;_nc_ht=scontent.fybz2-2.fna&amp;oh=00_AT8x1-I9X_aSBOuy7ZIGubwCId-rw0Hkjzev_wC8okMgzg&amp;oe=624E3AA5" width="751">
+              </div>
+             </div>
+             <div class="_6hp- _6hq0">
+              <div class="_94c3" style="transform:translate(80px,20px);width:70%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Handle your business" src="https://scontent.fybz2-2.fna.fbcdn.net/v/t39.8562-6/120894751_1549467898574430_9196133852584655168_n.png?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=5aT3CJIA6JQAX9CON-K&amp;_nc_ht=scontent.fybz2-2.fna&amp;oh=00_AT8x1-I9X_aSBOuy7ZIGubwCId-rw0Hkjzev_wC8okMgzg&amp;oe=624E3AA5" width="751">
+              </div>
+             </div>
+             <div class="_6hp- _6hq1">
+              <div class="_94c3" style="transform:translate(110px,20px);width:65%;margin-bottom:-0px;">
+               <img class="_6b6a img" alt="Handle your business" src="https://scontent.fybz2-2.fna.fbcdn.net/v/t39.8562-6/120894751_1549467898574430_9196133852584655168_n.png?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=5aT3CJIA6JQAX9CON-K&amp;_nc_ht=scontent.fybz2-2.fna&amp;oh=00_AT8x1-I9X_aSBOuy7ZIGubwCId-rw0Hkjzev_wC8okMgzg&amp;oe=624E3AA5" width="751">
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_2kx3 _2kyy _2kx4">
+            <div class="_2kzy _6bkh" style="max-width:400px;">
+             <h3 class="_2ky_">BUSINESS</h3>
+             <div class="_messengerMarketingSpacer__root _8nlv _8nmh _8nn5"></div>
+             <div class="_8nne _8nnm _8nnj _94rf">
+              <div class="_9aoa _94o1">
+               <h2 class="_94nw _94nx">Connect with businesses</h2>
+              </div>
+              <p class="_94-l">Find deals, make reservations and get customer support by chatting with your favorite businesses right from Messenger.</p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <footer class="_4sze" role="contentinfo" aria-label="Footer">
+      <div class="_6ajd">
+       <div class="_8v9m" style="max-width:1500px;">
+        <div class="_8on8">
+         <div class="_4tdp">
+          <div class="_8vbh">
+           <span class="_8vbg"> © Meta&nbsp;2022. </span>
+           <span class="_6aje"> The Apple and Google Play logos are trademarks of their respective owners. </span>
+           <span class="_6aje">
+            <div style="display: inline-flex;">
+             <a class="_8nni" href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">Data Policy</a>
+             <a class="_8nni" href="https://messenger.com/policy/cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+             <a class="_8nni" href="https://www.facebook.com/policies/?ref=pf" target="_blank" rel="noopener noreferrer">Terms</a>
+            </div></span>
+           <span class="_6aje">
+            <div class="_8vbj" id="u_0_3_s5">
+             <span><button class="_8vbk" id="u_0_4_zD"><span class="_8vbl">English (US)</span>
+               <svg class="_8v9s" height="8" width="8" viewbox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 4,8 8,0"></polygon>
+               </svg></button></span>
+             <ul class="_8v9q">
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=ar_AR">????????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=cs_CZ">?eština?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=da_DK">Dansk?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=de_DE">Deutsch?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=el_GR">?????????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=en_GB">English (UK)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=en_US">English (US)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=es_ES">Español (España)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=es_LA">Español?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=fi_FI">Suomi?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=fr_FR">Français (France)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=he_IL">??????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=hi_IN">???????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=hu_HU">Magyar?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=id_ID">Bahasa Indonesia?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=it_IT">Italiano?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=ja_JP">????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=ko_KR">????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=nb_NO">Norsk (bokmål)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=nl_NL">Nederlands?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=pl_PL">Polski?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=pt_BR">Português (Brasil)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=pt_PT">Português (Portugal)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=ro_RO">Român??</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=ru_RU">????????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=sv_SE">Svenska?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=th_TH">????????</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=tr_TR">Türkçe?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=vi_VN">Ti?ng Vi?t?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=zh_CN">??(??)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=zh_HK">??(??)?</a></li>
+              <li><a class="_8v9r" href="https://www.messenger.com/features?locale=zh_TW">??(??)?</a></li>
+             </ul>
+            </div></span>
+           <span class="_6aje">
+            <div style="max-width: 150px; margin: 0 auto;">
+             <img class="_6b6a img" alt="From Facebook Logo" src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/120094295_380944946407105_7528018231246737285_n.jpg?_nc_cat=1&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=qf9IYiZs1NsAX8THrtD&amp;_nc_oc=AQnOiaiNZ2f4iS8Rw5A4Yfe-ouzFiYgsolBgtZc1_4hIOcVPSOdUexjjjA6PNaCnb64&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT8FvIOTrQBx3omVUEg6CcpT9VDMu-uYx5uc5mqKpP7qOQ&amp;oe=624E00EC" width="161">
+            </div></span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </footer>
+     <div class="_90px _9gb7" id="u_0_5_WR">
+      <div id="close" class="_90nb">
+       <svg class="_messengerMarketingSVG__root" viewbox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+        <g fill-rule="evenodd" stroke-linecap="square">
+         <g class="_90nc" transform="translate(-306 -38)" fill-rule="nonzero" stroke-width="2">
+          <g transform="translate(307 39)">
+           <path transform="translate(11.743 11.626) rotate(-45) translate(-11.743 -11.626)" d="m-2.8154 11.774h29.428"></path>
+           <path transform="translate(11.314 11.314) rotate(45) translate(-11.314 -11.314)" d="m-3.2451 11.462h29.428"></path>
+          </g>
+         </g>
+        </g>
+       </svg>
+      </div>
+      <div class="_1-kf">
+       <div>
+        <div>
+         <span class="_6a8a"><img class="_1-kh _93s6 img" src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.8562-6/120053815_747002392532418_755037876693969449_n.png?_nc_cat=1&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_ohc=b59t1J8J1bMAX-4v5R4&amp;_nc_ht=scontent.fybz2-1.fna&amp;oh=00_AT8WNx3LJCHKvRlJeAlbfGvJIVFGmeEW_327k2NWbwylyw&amp;oe=624E9DCC" alt="Logos"></span>
+        </div>
+       </div>
+      </div>
+      <div class="_messengerMarketingSpacer__root _8nlz _8nml _8nmq"></div>
+      <p class="_90na">New! Message your Instagram friends right from Messenger. <a class="_8nni" href="https://l.messenger.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2020%2F09%2Fnew-messaging-features-for-instagram%2F&amp;h=AT0SiWP37bg_wUwrSLD_vvvhyaCrnhnq8oIeGtYmqAmfcKLWqOtnYz8h60NU6u3cFiGBUn_5EcsS07nlaD7eiv7LWV0djkzoeWuWd9qfV43bKZK8hGoyQ9NBzB4jXIXJ8rznN1OVaPoTe6K2" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about Coronavirus redirection" data-lynx-mode="hover">Learn More.</a></p>
+     </div>
+    </div>
+   </div>
+  </div> 
+  <script>requireLazy(["HasteSupportData"],function(m){m.handle({"gkxData":{"1465":{"result":true,"hash":"AT7xYfmgiZ3heiVqTAk"},"4166":{"result":false,"hash":"AT7yrb5QuQ92736uEQc"},"1742795":{"result":false,"hash":"AT6dbnY5JZm_bTINn9g"},"1912204":{"result":false,"hash":"AT72FnwJF9IKaIf-elQ"},"12":{"result":false,"hash":"AT7MdxfOMhMQYcz03IU"},"1646":{"result":false,"hash":"AT4QD7x1GFNYajJZrlk"},"3521":{"result":true,"hash":"AT6JXdAr_AL9yUh_Ltc"},"729631":{"result":false,"hash":"AT7b0tj8AHWG5lTF1rM"},"1281505":{"result":false,"hash":"AT4PHZM9gFoypCjQaOc"},"1291023":{"result":false,"hash":"AT519LseIG1nwq3ouco"},"1294182":{"result":false,"hash":"AT4vd6mwrtAJouEJeF4"},"1399218":{"result":true,"hash":"AT6guCW1eyIkOV1E18c"},"1401060":{"result":true,"hash":"AT5aetN5Gb3reIXVFv0"},"1485055":{"result":true,"hash":"AT5lkGxmhfrVKlcn8Hg"},"1596063":{"result":false,"hash":"AT7JHuDWtaOqRuBU9Bs"},"1597642":{"result":true,"hash":"AT78G4fDXhlnMl7oXe0"},"1647260":{"result":false,"hash":"AT4WdkrQSGE5dIsEyjo"},"1695831":{"result":false,"hash":"AT7RA6TJmDFGF-D6cIE"},"1722014":{"result":false,"hash":"AT6_M5gpc6RLrHjcMD4"},"1778302":{"result":false,"hash":"AT65fisZhmc2X92E_wM"},"1840809":{"result":false,"hash":"AT5nYctoTsr7alRim5Q"},"1848749":{"result":false,"hash":"AT5GsH9Kb-3W-taZkus"},"1906871":{"result":false,"hash":"AT6dIBiVv9bUDXlmwks"},"1985945":{"result":false,"hash":"AT66Oo5lY__5wUTptks"},"5541":{"result":true,"hash":"AT70V-Q_zfEykznO-dg"},"1099893":{"result":false,"hash":"AT5kly2LSZV_DKGRt9o"}},"qexData":{"644":{"r":null},"647":{"r":null},"648":{"r":null},"650":{"r":null},"651":{"r":null}}})});requireLazy(["Bootloader"],function(m){m.handlePayload({"consistency":{"rev":1005290037},"rsrcMap":{"Z1caYF8":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yF\/l\/0,cross\/ySMOd8qZHNh.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"O7lrp4c":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yD\/r\/k2_RckH62in.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lhNJLEq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3id3L4\/yA\/l\/en_US\/akTyt8dObwL.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lZ0oEET":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yX\/r\/pZQ3n6-a5B3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"iM+81YO":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQf04\/yK\/l\/en_US\/MNxb837mAjA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"i99OENS":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yr\/r\/7MI1epOdGq8.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"DsH1uN+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3il8Q4\/yS\/l\/en_US\/Ps1srN8KKuq.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"oRW6yZ6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/r\/dFiXbTjyV2Z.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Qkn3Kgv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yd\/r\/0lknW1R9944.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"wWqKytW":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i7M54\/y3\/l\/en_US\/zBCIFHyP0u5.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4WhKSMO":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/r\/8vBh8FkoMuk.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"HhslWmB":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y7\/r\/tLVmGa5rR2U.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MQAOpvQ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3idxF4\/yU\/l\/en_US\/mb3Px6aU8_s.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"jEo130k":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i-7s4\/yY\/l\/en_US\/z_uTHMFMNjA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/VQO5Ax":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yP\/r\/iJl4o4JaPj7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"3RgrP6W":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iwfe4\/ym\/l\/en_US\/Z2el9R1EgSR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"e0HQjmF":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yw\/r\/eBYIV1Q4dnJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ql9FGm\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i1Mb4\/yn\/l\/en_US\/c40qaGl9i7P.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"e1R4aN2":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/l\/0,cross\/K5bld7NKvmy.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"uFqE7J\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iTfb4\/y3\/l\/en_US\/oG8S1FsA5OB.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hyo6OTy":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yc\/r\/HoY7P5Cfi0E.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"s8g0cBt":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iy334\/y-\/l\/en_US\/py2-hjIULOw.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Lpfkp02":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i0JE4\/yq\/l\/en_US\/d1lL3GjzQ06.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"BKOgkKC":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yj\/l\/0,cross\/mGa6CTd_xGh.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"148L8oA":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ig9j4\/yu\/l\/en_US\/y2NydKY1CAR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8ELCBwH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/VRzSVH5iU-V.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"1tEzGmI":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yy\/r\/IL3-28tBm8T.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"SWx3yNv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/O_SjdcR-xKL.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"x22Oby4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y0\/r\/fN3cCj7Il4D.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"G2yK9wR":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y-\/r\/5NAKA_q8MEE.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2YvHVEd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ipVm4\/yr\/l\/en_US\/rpzNP0x4qg9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zHx404+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yw\/r\/XIklUPu8C8F.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"FV9GgGl":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y2\/r\/MYR9pF3XCO4.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"sdZwiCj":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iIf84\/yl\/l\/en_US\/Igdwp9AGR8B.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2\/maQ\/Q":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/mPQTxAVB7AK.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MgY8AQm":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iqES4\/yN\/l\/en_US\/uUSJkan2A5A.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"vQaGuVk":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i0fU4\/yu\/l\/en_US\/HzCX4iAcK-n.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hf3LECZ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yo\/r\/Q6AXAGUQ4Sf.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"l0um3+W":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iVzJ4\/yc\/l\/en_US\/pyeNG7YO9Xv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hXs7QNp":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iE_g4\/yr\/l\/en_US\/O-CMRi0XNAr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"jqgetlg":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/5UZDCcZJ59e.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"DzZHVNL":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iodE4\/yQ\/l\/en_US\/CfJYD6WC2e2.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0p9ql\/v":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iw2J4\/y8\/l\/en_US\/uwod10n-BAC.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"D10BBdy":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/r\/CmrAK55h-rz.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"GyOFfPX":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3irbh4\/yv\/l\/en_US\/lJSnyvgMOHJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"m1183bu":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ia314\/yw\/l\/en_US\/x3sRRfF-Ax0.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"G9Qvh1r":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/nEZ1mv3yFhv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"04wg4gT":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yn\/r\/kUrc4Ge3OWZ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"A+DwbGS":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iEk54\/yT\/l\/en_US\/-rV_1Ndep4C.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Rq1SB\/+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3itIQ4\/yF\/l\/en_US\/kHkfKEA_wKH.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"OvFxhBc":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i7jr4\/yp\/l\/en_US\/8K6BN8zvXaP.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"BgXrknk":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yf\/l\/0,cross\/r3W80QY64Dl.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"BcgH\/1v":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yG\/l\/0,cross\/gEgvUiKDBRc.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"gPafrTG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3in1R4\/yY\/l\/en_US\/xbPdoWZaOKb.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"BJp1MIj":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/r\/_fEYV5jcKZ-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"VvtgK6p":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ikn64\/yW\/l\/en_US\/01h2K1oq3Zn.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Kcvl5Vf":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/l\/0,cross\/cYtsO-Io2lp.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"59VoI9L":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iDWD4\/yC\/l\/en_US\/28yKgNc4okq.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"e3FiMzH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yC\/r\/Alesv7cAMSP.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"A2TKTpE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3igna4\/y_\/l\/en_US\/sWCJ3hMRHDs.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"LFiz\/Y2":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iYXl4\/yP\/l\/en_US\/a4XkJE2S3hA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2hXpDQN":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y3\/r\/hzMpqBJV7zD.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"v1CfeRU":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yP\/l\/0,cross\/qT_Kq7wH8Ks.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"rG\/Yxet":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i7mf4\/yw\/l\/en_US\/0D1yOTdkm4_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TXtoTX6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/r\/wklYE2n6Xge.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"t3bJ5b2":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yU\/l\/0,cross\/6Z77S4IgSsi.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"s3FJhEk":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y_\/r\/LPJCk_pTAN2.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4gKni9p":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yM\/l\/0,cross\/3cyFZ1RTn_B.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"NiBHiOQ":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yI\/l\/0,cross\/rO24Z0k0ozW.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"Rn6FCk7":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/r\/xYoKZt7Pifo.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lGDgERE":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yU\/l\/0,cross\/2mfv4wzDWG6.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ij46lDg":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ifrK4\/yT\/l\/en_US\/Fmt8OO0e4MN.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"kA447Wa":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iFe24\/yf\/l\/en_US\/NTyRm-xQQKF.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zdtMQfP":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y1\/r\/JU1DxoPuLiZ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4ZYd9LR":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y-\/r\/2PnIAoGthHE.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0YURsOA":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/r\/fXrCBhtcOYh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TsMuDJ6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iC6t4\/yU\/l\/en_US\/Jfkt2mviXR_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"77ZPT7\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iYuV4\/yJ\/l\/en_US\/HxGrshwlyl8.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"U5Mm8PD":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/G7yR1_bZPHI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"CaX8Qy3":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i3D44\/yO\/l\/en_US\/4LmzPcHd3Ch.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"+F7DGLo":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yT\/r\/8ZeDvKaJSrm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TUfGjbE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQjC4\/yB\/l\/en_US\/DOpBQS-6bOD.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4yYp4qn":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/l\/0,cross\/-djOaQjnEtS.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"3oZj7ie":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/l\/0,cross\/FCJKOZErM6-.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"ay0GQxb":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iwi94\/yI\/l\/en_US\/c_Jj-dLznYU.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"FmTZf79":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/r\/7xRIEoGU7H6.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"sTq1PH+":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3issI4\/y1\/l\/en_US\/7B7Yq-azYuz.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"7n\/MQng":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yX\/l\/0,cross\/Kp_zz8F-OPX.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"lBAxH+L":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQBo4\/yw\/l\/en_US\/mddbQK5TqK3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"bDtX0GU":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/l\/0,cross\/LFUn3EYxR16.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"FXD5hU7":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/l\/0,cross\/BTqpQK-TV8o.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"JvBLc6i":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ije04\/yk\/l\/en_US\/39KMQi_RJ4s.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"oCJLcPw":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3irQL4\/y3\/l\/en_US\/gA-CeOriNhY.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"HklVYc0":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ys\/r\/5S63xc45Bz3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hSmfhct":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ic0I4\/ym\/l\/en_US\/0DJjeWDHOf-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"71TVJlj":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQN94\/y_\/l\/en_US\/v6sc_qE7NHb.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"IIq0qR2":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yj\/l\/0,cross\/RRqGUg8Ht40.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"JdVI2u1":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ihMc4\/ya\/l\/en_US\/ueyLPLKKyiW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"gM\/Q71c":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iICT4\/yG\/l\/en_US\/gSuol01bg30.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"taYphkY":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yt\/r\/HXh-8z_uGoW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"pRSzY33":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yo\/r\/mu2bzeqyDuY.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ScRPNST":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/l\/0,cross\/OTQTiLwopu9.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"d0ETVIt":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y3\/l\/0,cross\/BpA-kQyA6HR.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/Sl3w7I":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3is-h4\/yP\/l\/en_US\/T1aIPzPfDl7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"5BvSZeQ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yn\/r\/CpDqljcZlcY.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"qM+IAh1":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iN5s4\/yU\/l\/en_US\/4Jmu_yJ73Fg.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"yoiQiFW":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ioBC4\/yE\/l\/en_US\/kb0CJLDxxUO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"05UkFLq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/r\/AN0pu-cnMRi.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ih1qBC1":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/l\/0,cross\/01Hz46LCl4Z.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"DaFJuN3":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y5\/l\/0,cross\/vLAJVFV2Gt4.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"kfqb6X\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3idbH4\/ya\/l\/en_US\/RNNH4WRnKxw.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/beYXsv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQMD4\/yW\/l\/en_US\/37AekPU6I87.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"STNMV2p":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ihoZ4\/y7\/l\/en_US\/EmFTV6kCrhh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"vtLJgJh":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i_-r4\/yb\/l\/en_US\/ubrs3R50GvP.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"K4U5j4H":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yv\/l\/0,cross\/14ugQk5qJTk.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"iQz007V":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yV\/l\/0,cross\/SjHavYXEkex.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"tjJiqur":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/mVzrKwjaxY0.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zJTvXc3":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yy\/l\/0,cross\/9iCKGzgiqUj.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"5l2IS5k":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3idZY4\/yC\/l\/en_US\/RZiGU5-HKFX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Cjub5pC":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ya\/l\/0,cross\/AVoFu3-AMIX.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"RB4ZpMY":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iGvY4\/yZ\/l\/en_US\/svuoobrtMTl.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"q757eqK":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yu\/l\/0,cross\/WN48N2oqpml.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"4aldW49":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y9\/r\/kqMDljaD2uP.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"QFS1Of1":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iLUe4\/ye\/l\/en_US\/s8qgclIHwxm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"HDhUqAE":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/l\/0,cross\/Tu9_i-qadeJ.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"RnMy5GB":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iz8e4\/yD\/l\/en_US\/soNgN_0sS_D.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"LevTGyp":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yi\/l\/0,cross\/n-hhfDMzkVM.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"6zSEtKc":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/l\/0,cross\/3KL9D4vGBj1.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"gWMJgTe":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/r\/iGksp69foR_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hIek+bG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/r\/DZ_VBlsy-dC.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"3lCHQPU":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ioDQ4\/yY\/l\/en_US\/z6A7iq3LBYK.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MzZTzuY":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iHYH4\/y0\/l\/en_US\/pLvz4XfyXBO.js?_nc_x=Ij3Wp8lg5Kz","nc":1}},"compMap":{"Dialog":{"r":["Z1caYF8","O7lrp4c","lhNJLEq","DZigeVk","lZ0oEET","iM+81YO","i99OENS","DsH1uN+","oRW6yZ6","Qkn3Kgv","wWqKytW","4WhKSMO","HhslWmB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","Animation","PageTransitions","BanzaiScuba_DEPRECATED"]},"be":1},"ExceptionDialog":{"r":["HhslWmB","O7lrp4c","lhNJLEq","MQAOpvQ","DZigeVk","jEo130k","\/VQO5Ax","lZ0oEET","3RgrP6W","d5UtP0b","e0HQjmF","ql9FGm\/","e1R4aN2","uFqE7J\/","4WhKSMO","hyo6OTy","s8g0cBt","i99OENS","Lpfkp02","DsH1uN+","oRW6yZ6","BKOgkKC","148L8oA","Qkn3Kgv","wWqKytW"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"QuickSandSolver":{"r":["lhNJLEq","8ELCBwH","1tEzGmI","i99OENS","Lpfkp02","SWx3yNv","oRW6yZ6","x22Oby4","wWqKytW","DZigeVk","HhslWmB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["lZ0oEET"]},"be":1},"ConfirmationDialog":{"r":["lhNJLEq","DsH1uN+","oRW6yZ6","G2yK9wR","wWqKytW","DZigeVk"],"be":1},"ODS":{"r":["i99OENS"],"be":1},"Dock":{"r":["O7lrp4c","DZigeVk","lZ0oEET","e1R4aN2","i99OENS","2YvHVEd","DsH1uN+","oRW6yZ6","Qkn3Kgv","wWqKytW"],"be":1},"WebSpeedInteractionsTypedLogger":{"r":["O7lrp4c","zHx404+","i99OENS","Qkn3Kgv","FV9GgGl","oRW6yZ6"],"rds":{"m":["BanzaiScuba_DEPRECATED"],"r":["lZ0oEET"]},"be":1},"AsyncRequest":{"r":["i99OENS","oRW6yZ6","wWqKytW","DZigeVk","HhslWmB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["lZ0oEET"]},"be":1},"DOM":{"r":["oRW6yZ6","wWqKytW","DZigeVk"],"be":1},"Form":{"r":["lhNJLEq","oRW6yZ6","wWqKytW","DZigeVk"],"be":1},"FormSubmit":{"r":["lhNJLEq","i99OENS","sdZwiCj","oRW6yZ6","wWqKytW","DZigeVk","HhslWmB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED"],"r":["lZ0oEET"]},"be":1},"Input":{"r":["wWqKytW"],"be":1},"Live":{"r":["2\/maQ\/Q","MgY8AQm","vQaGuVk","oRW6yZ6","Qkn3Kgv","wWqKytW","DZigeVk"],"be":1},"Toggler":{"r":["O7lrp4c","DZigeVk","lZ0oEET","e1R4aN2","i99OENS","DsH1uN+","oRW6yZ6","Qkn3Kgv","wWqKytW"],"be":1},"Tooltip":{"r":["HhslWmB","O7lrp4c","lhNJLEq","DZigeVk","lZ0oEET","e1R4aN2","4WhKSMO","hf3LECZ","i99OENS","Lpfkp02","DsH1uN+","oRW6yZ6","Qkn3Kgv","wWqKytW"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","BanzaiScuba_DEPRECATED","Animation"]},"be":1},"URI":{"r":[],"be":1},"trackReferrer":{"r":[],"rds":{"m":["BanzaiScuba_DEPRECATED"],"r":["lZ0oEET","i99OENS"]},"be":1},"PhotoTagApproval":{"r":["l0um3+W","hXs7QNp","oRW6yZ6","wWqKytW","DZigeVk"],"be":1},"PhotoSnowlift":{"r":["jqgetlg","HhslWmB","DzZHVNL","0p9ql\/v","D10BBdy","GyOFfPX","Z1caYF8","m1183bu","G9Qvh1r","O7lrp4c","04wg4gT","lhNJLEq","A+DwbGS","MgY8AQm","Rq1SB\/+","OvFxhBc","BgXrknk","BcgH\/1v","gPafrTG","BJp1MIj","MQAOpvQ","hXs7QNp","VvtgK6p","DZigeVk","\/VQO5Ax","Kcvl5Vf","59VoI9L","lZ0oEET","3RgrP6W","e3FiMzH","A2TKTpE","LFiz\/Y2","2hXpDQN","v1CfeRU","e0HQjmF","rG\/Yxet","TXtoTX6","t3bJ5b2","e1R4aN2","s3FJhEk","4gKni9p","NiBHiOQ","Rn6FCk7","iM+81YO","4WhKSMO","hyo6OTy","hf3LECZ","lGDgERE","Ij46lDg","kA447Wa","i99OENS","zdtMQfP","vQaGuVk","4ZYd9LR","0YURsOA","Lpfkp02","2YvHVEd","FV9GgGl","TsMuDJ6","DsH1uN+","oRW6yZ6","77ZPT7\/","U5Mm8PD","BKOgkKC","CaX8Qy3","Qkn3Kgv","wWqKytW","+F7DGLo"],"rds":{"m":["Animation","VisualCompletionGating","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions"]},"be":1},"PhotoTagger":{"r":["TUfGjbE","jqgetlg","HhslWmB","4yYp4qn","0p9ql\/v","3oZj7ie","D10BBdy","GyOFfPX","l0um3+W","ay0GQxb","Z1caYF8","m1183bu","G9Qvh1r","O7lrp4c","lhNJLEq","FmTZf79","MgY8AQm","Rq1SB\/+","sTq1PH+","+F7DGLo","OvFxhBc","BgXrknk","7n\/MQng","BcgH\/1v","lBAxH+L","gPafrTG","MQAOpvQ","hXs7QNp","DZigeVk","\/VQO5Ax","bDtX0GU","FXD5hU7","59VoI9L","lZ0oEET","JvBLc6i","oCJLcPw","3RgrP6W","e3FiMzH","d5UtP0b","2hXpDQN","HklVYc0","hSmfhct","v1CfeRU","71TVJlj","IIq0qR2","e0HQjmF","JdVI2u1","rG\/Yxet","gM\/Q71c","taYphkY","pRSzY33","ScRPNST","ql9FGm\/","t3bJ5b2","e1R4aN2","s3FJhEk","d0ETVIt","Rn6FCk7","iM+81YO","4WhKSMO","hyo6OTy","hf3LECZ","lGDgERE","Ij46lDg","\/Sl3w7I","kA447Wa","5BvSZeQ","i99OENS","zdtMQfP","vQaGuVk","qM+IAh1","4ZYd9LR","0YURsOA","yoiQiFW","Lpfkp02","2YvHVEd","05UkFLq","TsMuDJ6","DsH1uN+","oRW6yZ6","77ZPT7\/","Ih1qBC1","U5Mm8PD","DaFJuN3","kfqb6X\/","\/beYXsv","STNMV2p","BKOgkKC","vtLJgJh","CaX8Qy3","K4U5j4H","Qkn3Kgv","iQz007V","tjJiqur","wWqKytW","zJTvXc3","5l2IS5k","Cjub5pC","RB4ZpMY","FV9GgGl"],"rdfds":{"m":["GamesVideoModerationRulesNux.react","GamesVideoDeleteCommentDialog.react","GamesVideoCommentRemovedDialog.react","CometTooltipDeferredImpl.react"],"r":["q757eqK","A+DwbGS","4aldW49","QFS1Of1","HDhUqAE"]},"rds":{"m":["PresenceStatus","FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","Animation","PageTransitions","LynxAsyncCallbackFalcoEvent","CometSuspenseFalcoEvent"]},"be":1},"PhotoTags":{"r":["l0um3+W","hXs7QNp","lZ0oEET","oRW6yZ6","wWqKytW","DZigeVk"],"be":1},"TagTokenizer":{"r":["D10BBdy","l0um3+W","O7lrp4c","DZigeVk","Kcvl5Vf","lZ0oEET","LFiz\/Y2","pRSzY33","RnMy5GB","LevTGyp","i99OENS","DsH1uN+","oRW6yZ6","6zSEtKc","wWqKytW","HhslWmB"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"AsyncDialog":{"r":["HhslWmB","O7lrp4c","lhNJLEq","DZigeVk","\/VQO5Ax","lZ0oEET","3RgrP6W","e0HQjmF","e1R4aN2","4WhKSMO","hyo6OTy","i99OENS","Lpfkp02","DsH1uN+","oRW6yZ6","BKOgkKC","Qkn3Kgv","wWqKytW"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"Hovercard":{"r":["HhslWmB","O7lrp4c","lhNJLEq","DZigeVk","lZ0oEET","HklVYc0","t3bJ5b2","e1R4aN2","d0ETVIt","4WhKSMO","hf3LECZ","i99OENS","yoiQiFW","Lpfkp02","DsH1uN+","oRW6yZ6","Qkn3Kgv","wWqKytW","FV9GgGl"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED","PageTransitions","Animation"]},"be":1},"XSalesPromoWWWDetailsDialogAsyncController":{"r":["gWMJgTe"],"be":1},"XOfferController":{"r":["hIek+bG"],"be":1},"PerfXSharedFields":{"r":["oRW6yZ6","Qkn3Kgv"],"be":1},"EncryptedImg":{"r":["04wg4gT","lhNJLEq","vQaGuVk","Lpfkp02","oRW6yZ6","wWqKytW"],"be":1},"React":{"r":["4WhKSMO"],"be":1}}})});</script> 
+  <script>requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["lZ0oEET","i99OENS","oRW6yZ6","wWqKytW","HhslWmB","hf3LECZ","lhNJLEq","\/VQO5Ax","O7lrp4c","4WhKSMO","FV9GgGl","3lCHQPU","Lpfkp02","DsH1uN+","MzZTzuY","Qkn3Kgv","+F7DGLo"]);});</script> 
+  <script>requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){var s=(new ServerJS());s.handle({"define":[["LinkshimHandlerConfig",[],{"supports_meta_referrer":false,"default_meta_referrer_policy":"default","switched_meta_referrer_policy":"origin","non_linkshim_lnfb_mode":"ie","link_react_default_hash":"AT3ew7xm1j-gWY62ow89Q864_NSFkGjoaof2CkrJcT6eNfzQIf1vUpY34yE13abKVHOsNoCZEYIrLiunUCDxdD_mZqSVrJ06x5lSvw-lq5LAWNvOTcB6uOvMgd4nyBixNiASDH8wr4UymBe-","untrusted_link_default_hash":"AT3lv35Ym2937-_lyNwGlOhPtA--08f0L0-zO2_K9HpRZRDc_hkYSCQSXqC_59REMXCsS8bfFV_izbZ0k-joQCZks7uO9ECCd9C4vol24RUTLPlBzpDw_jIPnGooQXbcCzSHBnXQkUt6hEFk","linkshim_host":"l.messenger.com","linkshim_path":"\/l.php","linkshim_enc_param":"h","linkshim_url_param":"u","use_rel_no_opener":false,"always_use_https":false,"onion_always_shim":true,"middle_click_requires_event":false,"www_safe_js_mode":"hover","m_safe_js_mode":null,"ghl_param_link_shim":false,"click_ids":null,"is_linkshim_supported":true,"current_domain":"messenger.com","blocklisted_domains":["ad.doubleclick.net","ads-encryption-url-example.com","bs.serving-sys.com","ad.atdmt.com","adform.net","ad13.adfarm1.adition.com","ilovemyfreedoms.com","secure.adnxs.com"],"is_mobile_device":false},27],["WebDriverConfig",[],{"isTestRunning":false,"isJestE2ETestRun":false,"auxiliaryServiceInfo":{},"testPath":null,"originHost":null},5332],["cr:1108857",[],{"__rc":[null,"Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:1294158",["React.classic"],{"__rc":["React.classic","Aa3wTHmDEgQtFifhl8yUuq23Qsat7DpjBGJd-iVI5t5tY6TY3neVRpDAQe1d8NGaXg_w-RnVqso9nTeoZSjJFhAI7wRw"]},-1],["cr:1294159",["ReactDOM.classic"],{"__rc":["ReactDOM.classic","Aa3wTHmDEgQtFifhl8yUuq23Qsat7DpjBGJd-iVI5t5tY6TY3neVRpDAQe1d8NGaXg_w-RnVqso9nTeoZSjJFhAI7wRw"]},-1],["cr:1294246",["ReactDOM.classic"],{"__rc":["ReactDOM.classic","Aa3wTHmDEgQtFifhl8yUuq23Qsat7DpjBGJd-iVI5t5tY6TY3neVRpDAQe1d8NGaXg_w-RnVqso9nTeoZSjJFhAI7wRw"]},-1],["cr:2682",["warningBlueish"],{"__rc":["warningBlueish","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:11202",[],{"__rc":[null,"Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:1105154",[],{"__rc":[null,"Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:1292365",["React-prod.classic"],{"__rc":["React-prod.classic","Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:1344485",["ReactDOM.classic.prod-or-profiling"],{"__rc":["ReactDOM.classic.prod-or-profiling","Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:2683",["warningBlue"],{"__rc":["warningBlue","Aa07O6-nCCjMReqBNvB-Ni7nCgpinFikj4Ex5KgQI42Sxay9tvUAtnT9RolNhpjokAYFlyRQF4CsEpbV1n4dKlyH_9QN"]},-1],["CoreWarningGK",[],{"forceWarning":false},725],["cr:1344486",["ReactDOM.classic.prod"],{"__rc":["ReactDOM.classic.prod","Aa2XsVAUy8g3Q2n_QQ1RQ0YjTkzubbgqHqHxyZwiuQVj64Ecihz9YyjSTcxrYHcd3scFl7Kh3J5ZVN-kNN_0w43KxJDt1aEaYg"]},-1],["cr:983844",[],{"__rc":[null,"Aa0lYRgkKnd5LuejnGiZdmGk2S153wOI9I-eRsOaRdNByD6siKfYLmnbYmnQ4ATsZaqBk_G56VUI7jmlxg"]},-1],["cr:1344487",["ReactDOM-prod.classic"],{"__rc":["ReactDOM-prod.classic","Aa24d93Jl8vOduX3zodZLBaCohMIpFaA0iQOAznKNc8SxGalqBRM0AXZby4REMX0egu4QHTyMYf5YvMnRnltV3uNHzEPYK402NI1UW3x"]},-1],["cr:1353359",["EventListenerImplForBlue"],{"__rc":["EventListenerImplForBlue","Aa1TguKXzVffdLYNNfMYTuwamjxS-eScf3Bm0XVJxxDTclJfDUPq93lVAHprWzF6a7OhKt5oC8BTO1W0xF735bKBeeAjbvu1zg"]},-1]],"markup":[["__markup_a588f507_0_0_3u\u0040b24b6272b74f537b5be9b8f0302ebe7a",{"__html":"\u003Cdiv class=\"_8os-\">\u003Cp class=\"_8pi1\">Choose from fun themes and colors to make your chats more personal \u003Cspan style=\"color: black\">\u2764\ufe0f \ud83c\udff3\ufe0f\u200d\ud83c\udf08\u003C\/span>\u003C\/p>\u003C\/div>"},1],["__markup_a588f507_0_1_RR\u0040b24b6272b74f537b5be9b8f0302ebe7a",{"__html":"\u003Cdiv class=\"_8os-\">\u003Cp class=\"_8pi1\">Choose from fun themes and colors to make your chats more personal \u003Cspan style=\"color: black\">\u2764\ufe0f \ud83c\udff3\ufe0f\u200d\ud83c\udf08\u003C\/span>\u003C\/p>\u003C\/div>"},1],["__markup_a588f507_0_2_54\u0040b24b6272b74f537b5be9b8f0302ebe7a",{"__html":"\u003Cdiv class=\"_8os-\">\u003Cp class=\"_8pi1\">Choose from fun themes and colors to make your chats more personal \u003Cspan style=\"color: black\">\u2764\ufe0f \ud83c\udff3\ufe0f\u200d\ud83c\udf08\u003C\/span>\u003C\/p>\u003C\/div>"},1]],"elements":[["__elem_5fcd7155_0_0_oA\u0040979b9e9d91d0450eb53fc2256918a30d","u_0_0_yC",2],["__elem_a588f507_0_0_w3\u0040742387d68c5705edbcecb52bb589fe09","u_0_1_mJ",1],["__elem_fc9f538f_0_0_EI\u0040c42a385779020c67a73d5ead22b67f4e","u_0_2_l0",1],["__elem_a588f507_0_1_5w\u004046f5abd92824a99bd358c64c25c874bc","u_0_3_s5",1],["__elem_0cdc66ad_0_0_5N\u00400539680859d52715350461dda72029e3","u_0_4_zD",1],["__elem_7a76b437_0_0_UC\u0040ee0ab675be77750da776335a3dc0930d","u_0_5_WR",2],["__elem_a588f507_0_2_qb\u0040437b3d0080d7280b921c24d8761205f9","close",1]],"require":[["WebStorageMonster\u0040d3715f7761ecb670950115c4a9a3633d","schedule",[],[]],["WebPixelRatioDetector\u00405242623e791f8f5c01e59c4ed58019a4","startDetecting",[],[false]],["ScriptPath\u0040645fdf27930f0b470006953a66e2740c","set",[],["XMessengerDotComMarketingFeaturesController","fdb04cee",{"imp_id":"0Fkxne8BD9tL6pfMQ","ef_page":null,"uri":"https:\/\/www.messenger.com\/features"}]],["MessengerMarketingHeader\u0040109c241ee6142a17cdda86519dff2df4","create",["__elem_5fcd7155_0_0_oA","__elem_a588f507_0_0_w3"],[{"__m":"__elem_5fcd7155_0_0_oA"},{"__m":"__elem_a588f507_0_0_w3"},30]],["MessengerMarketingMobileMenu\u0040d2da7ec9b6c0c4f2757f3d41401b161d","addHandlers",["__elem_5fcd7155_0_0_oA"],[{"__m":"__elem_5fcd7155_0_0_oA"}]],["MessengerMarketingLanguageToggle\u0040bf629278334a6eb148898adec13d4c96","init",["__elem_0cdc66ad_0_0_5N","__elem_a588f507_0_1_5w"],[{"button":{"__m":"__elem_0cdc66ad_0_0_5N"},"container":{"__m":"__elem_a588f507_0_1_5w"}}]],["MessengerMarketingClose\u0040a998347eb563c16397a2f1f5c508f11b","init",["__elem_7a76b437_0_0_UC","__elem_a588f507_0_2_qb"],[{"root":{"__m":"__elem_7a76b437_0_0_UC"},"closeButton":{"__m":"__elem_a588f507_0_2_qb"}}]],["MessengerMarketingBannerPosition\u0040bce3dca2588aadbec8a3469d82b262c6","init",["__elem_7a76b437_0_0_UC"],[{"root":{"__m":"__elem_7a76b437_0_0_UC"}}]],["FBLynx\u004053f95598c6d64e485be6c948c53f51b5","setupDelegation",[],[]],["ReactRenderer\u0040b9a304ae2a66862cd823347c2f137192","constructAndRenderComponentIntoComment_DO_NOT_USE",["MessengerMarketingCarousel.react","__markup_a588f507_0_0_3u","HTML","__markup_a588f507_0_1_RR","__markup_a588f507_0_2_54","__elem_fc9f538f_0_0_EI"],[{"constructor":{"__m":"MessengerMarketingCarousel.react"},"concurrentRootOptions":null,"props":{"sections":[{"tab":{"title":"LOVE","icon":"https:\/\/scontent.fybz2-2.fna.fbcdn.net\/v\/t39.8562-6\/121003585_3368619779873738_4223490298837703517_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=KoAw3ym6RGAAX_AUlUF&_nc_ht=scontent.fybz2-2.fna&oh=00_AT--U8NaMXUKeqc3UO-Nldi_HxwaC0qm_VaOo2ro4W46HA&oe=624F11C7","hasMaxTitleWidth":true},"eyebrow":"CHAT THEMES","heading":"Your\u00a0chats Your\u00a0way","content":{"__m":"__markup_a588f507_0_0_3u"},"asset":{"image":"https:\/\/scontent-ort2-1.xx.fbcdn.net\/v\/t39.8562-6\/121027766_1027270934375273_1699311455752392651_n.png?_nc_cat=108&ccb=1-5&_nc_sid=6825c5&_nc_ohc=Ys0zqcsW9FwAX_ZGUIk&_nc_ht=scontent-ort2-1.xx&oh=00_AT_0dK_-Nibz5TIhU5y2pF_-hmeYfxAzAOKle4GBUOobIA&oe=624ECA90","video":null,"video_duration":null}},{"tab":{"title":"TIE DYE","icon":"https:\/\/scontent.fybz2-2.fna.fbcdn.net\/v\/t39.8562-6\/121003585_3368619779873738_4223490298837703517_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=KoAw3ym6RGAAX_AUlUF&_nc_ht=scontent.fybz2-2.fna&oh=00_AT--U8NaMXUKeqc3UO-Nldi_HxwaC0qm_VaOo2ro4W46HA&oe=624F11C7","hasMaxTitleWidth":true},"eyebrow":"CHAT THEMES","heading":"Your\u00a0chats Your\u00a0way","content":{"__m":"__markup_a588f507_0_1_RR"},"asset":{"image":"https:\/\/scontent.fybz2-2.fna.fbcdn.net\/v\/t39.8562-6\/120939741_777360753058516_6246407658227249935_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=SNT5-3vbk1EAX-KRscY&_nc_ht=scontent.fybz2-2.fna&oh=00_AT96k1nwJoBdZXOrVL0VGHKkQ7fZONUUnj0XqbwZJFnAnw&oe=624ECC68","video":null,"video_duration":null}},{"tab":{"title":"PRIDE","icon":"https:\/\/scontent.fybz2-2.fna.fbcdn.net\/v\/t39.8562-6\/121003585_3368619779873738_4223490298837703517_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=KoAw3ym6RGAAX_AUlUF&_nc_ht=scontent.fybz2-2.fna&oh=00_AT--U8NaMXUKeqc3UO-Nldi_HxwaC0qm_VaOo2ro4W46HA&oe=624F11C7","hasMaxTitleWidth":true},"eyebrow":"CHAT THEMES","heading":"Your\u00a0chats Your\u00a0way","content":{"__m":"__markup_a588f507_0_2_54"},"asset":{"image":"https:\/\/scontent-ort2-1.xx.fbcdn.net\/v\/t39.8562-6\/120963195_361758808295026_3411418509868472295_n.png?_nc_cat=109&ccb=1-5&_nc_sid=6825c5&_nc_ohc=BSJHX0xKIbQAX_Rrk5j&_nc_ht=scontent-ort2-1.xx&oh=00_AT-9XSv3yqXhtUJALWJVGzR_un6g3nd7LAypE_TU9HzZyQ&oe=624EDB35","video":null,"video_duration":null}}],"hasEyebrow":false,"theme":"refresh"},"dummyElem":{"__m":"__elem_fc9f538f_0_0_EI"},"acrossTransitions":false,"clobberSiblings":false,"preloader":null,"bigPipeContext":{"__bigPipeContext":1},"nonBlockingPreloaders":null}]],["RequireDeferredReference\u0040ff73652dbe4029c8407a7338ee93d237","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED"],"sd"]],["RequireDeferredReference\u0040ff73652dbe4029c8407a7338ee93d237","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent","BanzaiScuba_DEPRECATED"],"css"]],["TimeSliceImpl\u00400ddcfbdc7bb1d7a1020e35917fc6dcc9"],["HasteSupportData\u0040d32c75408c0b6f1c7e15f7d679804413"],["ServerJS\u0040717ae7a45aeb7782400d26be147151cb"],["Run\u00407c64e5b2a0bb90bb482b016ed504ac01"],["InitialJSLoader\u0040b589d67e96f9ca79f52f45914c1e77c5"]]});requireLazy(["Run"],function(Run){Run.onAfterLoad(function(){s.cleanup(TimeSlice)})});});</script> 
+  <script>now_inl=(function(){var p=window.performance;return p&&p.now&&p.timing&&p.timing.navigationStart?function(){return p.now()+p.timing.navigationStart}:function(){return new Date().getTime()};})();window.__bigPipeFR=now_inl();</script> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yu/l/0,cross/-NdpAnHCtI5.css?_nc_x=Ij3Wp8lg5Kz" as="style"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y8/l/0,cross/C9g6WKJmDVW.css?_nc_x=Ij3Wp8lg5Kz" as="style"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/OhYKshpWqAu.css?_nc_x=Ij3Wp8lg5Kz" as="style"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3i7M54/y3/l/en_US/zBCIFHyP0u5.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yG/l/0,cross/IfnJJXcOG_M.css?_nc_x=Ij3Wp8lg5Kz" as="style"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/Q6AXAGUQ4Sf.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/tLVmGa5rR2U.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3id3L4/yA/l/en_US/akTyt8dObwL.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/iJl4o4JaPj7.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/7MI1epOdGq8.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/dFiXbTjyV2Z.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/k2_RckH62in.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/8vBh8FkoMuk.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/MYR9pF3XCO4.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3ioDQ4/yY/l/en_US/z6A7iq3LBYK.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3i0JE4/yq/l/en_US/d1lL3GjzQ06.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v3il8Q4/yS/l/en_US/Ps1srN8KKuq.js?_nc_x=Ij3Wp8lg5Kz" as="script" nonce="jCT3HX7W"> 
+  <script>window.__bigPipeCtor=now_inl();requireLazy(["BigPipe"],function(BigPipe){define("__bigPipe",[],window.bigPipe=new BigPipe({"forceFinish":true,"config":{"flush_pagelets_asap":true,"dispatch_pagelet_replayable_actions":false}}));});</script> 
+  <script nonce="jCT3HX7W">(function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("first_response",n);})})();</script> 
+  <script nonce="jCT3HX7W">requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["DZigeVk","cwmYdEq","3Mmmyid","wWqKytW","d5UtP0b","hf3LECZ","HhslWmB","lhNJLEq","/VQO5Ax","i99OENS","oRW6yZ6","O7lrp4c","4WhKSMO","FV9GgGl","3lCHQPU","Lpfkp02","DsH1uN+"],id:"first_response",phase:0,last_in_phase:true,tti_phase:0,all_phases:[63],hsrp:{hblp:{consistency:{rev:1005290037}}},allResources:["lZ0oEET","i99OENS","oRW6yZ6","wWqKytW","HhslWmB","DZigeVk","cwmYdEq","3Mmmyid","d5UtP0b","hf3LECZ","lhNJLEq","/VQO5Ax","O7lrp4c","4WhKSMO","FV9GgGl","3lCHQPU","Lpfkp02","DsH1uN+","MzZTzuY","Qkn3Kgv","+F7DGLo"]});}));</script> 
+  <script>requireLazy(["__bigPipe"],function(bigPipe){bigPipe.setPageID("0-0")});CavalryLogger.setPageID("0-0");</script>
+  <script nonce="jCT3HX7W">(function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("last_response",n);})})();</script> 
+  <script nonce="jCT3HX7W">requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["i99OENS","oRW6yZ6"],id:"last_response",phase:63,last_in_phase:true,the_end:true,jsmods:{define:[["WebStorageMonsterLoggingURI",[],{uri:"/ajax/webstorage/process_keys/?state=1"},3032],["TimeSliceInteractionSV",[],{on_demand_reference_counting:true,on_demand_profiling_counters:true,default_rate:1000,lite_default_rate:100,interaction_to_lite_coinflip:{ADS_INTERFACES_INTERACTION:0,ads_perf_scenario:0,ads_wait_time:0,Event:1},interaction_to_coinflip:{ADS_INTERFACES_INTERACTION:1,ads_perf_scenario:1,ads_wait_time:1,Event:100},enable_heartbeat:true,maxBlockMergeDuration:0,maxBlockMergeDistance:0,enable_banzai_stream:true,user_timing_coinflip:50,banzai_stream_coinflip:0,compression_enabled:true,ref_counting_fix:false,ref_counting_cont_fix:false,also_record_new_timeslice_format:false,force_async_request_tracing_on:false},2609],["cr:1351741",["CometEventListener"],{__rc:["CometEventListener","Aa31nWg0rHIvqU76U5jPKr3dt7KoHK7A-pbZfRM9rsXGydtkqw4gOyn02UVXj-QjushLSV9g54M8JzqpQd6t1NwHtABf5JaO47RtmJxukEgIZahKKVTX"]},-1],["cr:1634616",["UserActivityBlue"],{__rc:["UserActivityBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["IntlCurrentLocale",[],{code:"en_US"},5954],["KillabyteProfilerConfig",[],{htmlProfilerModule:null,profilerModule:null,depTypes:{BL:"bl",NON_BL:"non-bl"}},1145],["QuicklingConfig",[],{version:"1005290037;0;",sessionLength:10,inactivePageRegex:"^/(fr/u\\.php|ads/|advertising|ac\\.php|ae\\.php|a\\.php|ajax/emu/(end|f|h)\\.php|badges/|comments\\.php|connect/uiserver\\.php|editalbum\\.php.+add=1|ext/|feeds/|help([/?]|$)|identity_switch\\.php|isconnectivityahumanright/|intern/|login\\.php|logout\\.php|sitetour/homepage_tour\\.php|sorry\\.php|syndication\\.php|webmessenger|/plugins/subscribe|lookback|brandpermissions|gameday|pxlcld|comet|worldcup/map|livemap|work/reseller|([^/]+/)?dialog|legal|.+\\.pdf$|.+/settings/)",badRequestKeys:["nonce","access_token","oauth_token","xs","checkpoint_data","code"],logRefreshOverhead:false},60],["TrackingConfig",[],{domain:"https://pixel.facebook.com"},325],["BrowserPaymentHandlerConfig",[],{enabled:false},3904],["TimeSpentConfig",[],{"0_delay":0,"0_timeout":8,delay:1000,timeout:64},142],["cr:1642797",["BanzaiBase"],{__rc:["BanzaiBase","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:844180",["TimeSpentImmediateActiveSecondsLoggerBlue"],{__rc:["TimeSpentImmediateActiveSecondsLoggerBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["cr:1187159",["BlueCompatBroker"],{__rc:["BlueCompatBroker","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1],["BanzaiConfig",[],{MAX_SIZE:10000,MAX_WAIT:150000,MIN_WAIT:null,RESTORE_WAIT:150000,blacklist:["time_spent"],disabled:false,gks:{boosted_pagelikes:true,mercury_send_error_logging:true,platform_oauth_client_events:true,graphexplorer:true,sticker_search_ranking:true},known_routes:["artillery_javascript_actions","artillery_javascript_trace","artillery_logger_data","logger","falco","gk2_exposure","js_error_logging","loom_trace","marauder","perfx_custom_logger_endpoint","qex","require_cond_exposure_logging","sri_logger_data"],should_drop_unknown_routes:true,should_log_unknown_routes:false},7],["ImmediateActiveSecondsConfig",[],{sampling_rate:0},423],["cr:692209",["cancelIdleCallbackBlue"],{__rc:["cancelIdleCallbackBlue","Aa0EDdp5cm1UO9ED50lmxbjMObVwpU_T30kNWv57f5UGSW2i2ry7gjw3mrelH7NJS_uxaPj6t902gu433VYhxvAm-t4"]},-1]],require:[["CavalryLoggerImpl@2e1616bf97c4ed748e270c08d4ce98fe","startInstrumentation",[],[]],["NavigationMetrics@562a5cc86fea0a970cda08bee887d9c3","setPage",[],[{page:"XMessenge
